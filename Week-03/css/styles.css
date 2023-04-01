@@ -7,8 +7,8 @@ body{
     width: 80%;
     float: right;
 }
-ul{
-    list-style: none;
+h2{
+    text-transform: uppercase;
 }
 header{
     background-color: #373867;
@@ -35,4 +35,91 @@ header img{
     left: 50px;
     top: 45px;
     bottom: 45px;
+}
+aside{
+    font-family: 'Roboto';
+    background-color: #AACE9B;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 20%;
+    position: fixed;
+}
+aside a{
+    color: #373867;
+    cursor: pointer;
+    text-decoration: none;
+}
+aside li{
+    text-align: justify;
+}
+.sidebar-logo{
+position:relative;
+margin-top: 43px;
+margin-left: 95px;
+margin-right: 105px;
+}
+aside button{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #EBECF0;
+    color:#373867;
+    height: 69.96991729736328px;
+    width: 205px;
+    left: 40px;
+    border-radius: 5px;
+    border: 1px solid #373867;
+    padding: 14px 36px 14px 36px;
+    margin: 226 50 41,16 40;
+}
+.button-home{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #373867;
+    color:#F7FBF5;
+    height: 69.96991729736328px;
+    top: 202.9970703125px;
+    border-radius: 5px;
+    padding: 14px 36px 14px 36px;
+}
+.sidebar-list{
+    margin-top: 337,13px;
+    margin-bottom: 41,1px;
+    padding: 14px 36px 14px 36px;
+}
+aside h2{
+    position: relative;
+    margin-left: 29px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+.other-options-li a{
+    position: relative;
+    margin-left: 36px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+}
+.mail-maps-li a{
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 12px;
+}
+aside ul li img{
+    margin-left: 36px;
+    margin-top: 16px;
 }
