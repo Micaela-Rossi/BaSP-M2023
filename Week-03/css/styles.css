@@ -10,6 +10,10 @@ body{
 h2{
     text-transform: uppercase;
 }
+.section-space{
+    width: 1234px;
+    height: 848px;
+}
 header{
     background-color: #373867;
     color: #AACE9B;
@@ -59,7 +63,7 @@ margin-top: 43px;
 margin-left: 95px;
 margin-right: 105px;
 }
-aside button{
+.nav-links{
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
@@ -69,13 +73,11 @@ aside button{
     color:#373867;
     height: 69.96991729736328px;
     width: 205px;
-    left: 40px;
     border-radius: 5px;
     border: 1px solid #373867;
     padding: 14px 36px 14px 36px;
-    margin: 226 50 41,16 40;
 }
-.button-home{
+#button-home{
     font-size: 30px;
     font-weight: 700;
     line-height: 35px;
@@ -84,7 +86,6 @@ aside button{
     background-color: #373867;
     color:#F7FBF5;
     height: 69.96991729736328px;
-    top: 202.9970703125px;
     border-radius: 5px;
     padding: 14px 36px 14px 36px;
 }
@@ -122,4 +123,80 @@ aside h2{
 aside ul li img{
     margin-left: 36px;
     margin-top: 16px;
+}
+.main-reason-h2{
+    position: relative;
+    width: 431px;
+    height: 59px;
+    left: 68px;
+    top: 68px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    z-index: 2;
+}
+.main-reason-text{
+    position: relative;
+    width: 35%;
+    height: 287px;
+    left: 74px;
+    top: 75px;
+    display: inline-block;
+    margin: 0;
+    z-index: 2;
+    font-weight: 600;
+}
+.main-reason-img{
+    position: absolute;
+    height: 684px;
+    width: 810px;
+    left: 729px;
+    top: 226px;
+    z-index: 1;
+}
+.color-line{
+    position: relative;
+    width: 1019px;
+    height: 0px;
+    left: 91px;
+    top: 0;
+    background: #373867;
+    border: 3px solid #373867;
+}
+/*revisado hacia arriba*/
+/*
+.how-can-we-help-img{
+    position: absolute;
+    height: 876px;
+    width: 1122px;
+    left: 366px;
+    top: 1022px;
+    z-index: 0;
+}*/
+.how-can-we-help-h2{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 164px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #EBECF0;
+}
+#how-can-we-help-display p{
+    height: 107px;
+    width: 351px;
+    z-index: 3;
+    padding: 14px 36px 14px 36px;
+    background-color: #EBECF0;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    color: #373867;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
 }
