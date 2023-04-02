@@ -212,25 +212,25 @@ aside ul li img{
     position: relative;
     margin-left: 169px;
     margin-top: 91px;
-    Line height: 35.16px;
+    line-height: 35.16px;
 }
 .position-p2{
     position: relative;
     margin-left: 154px;
     margin-top: 91px;
-    Line height: 35.16px;
+    line-height: 35.16px;
 }
 .position-p3{
     position: relative;
     margin-left: 169px;
     margin-top: 182px;
-    Line height: 35.16px;
+    line-height: 35.16px;
 }
 .position-p4{
     position: relative;
     margin-left: 154px;
     margin-top: 182px;
-    Line height: 35.16px;
+    line-height: 35.16px;
 }
 #contact{
     position: relative;
@@ -246,37 +246,67 @@ aside ul li img{
     margin-left: 20px;
 }
 form{
-    display: inline-block;
-    width: 35%;
     margin-left: 79px;
 }
 form p{
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
+    margin-top: 32px;
+    margin-bottom: 24px;
 }
 label{
+    margin-top: 23px;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
+    display: inline-block;
+    width: 100%;
+}
+label input{
+    margin-left: 32px;
+}
+#surname{
+    margin-left: 58px;
 }
 input[type="text"]{
-    margin-top: 22px;
+    margin-left: 96px;
     height: 45px;
     width: 293px;
     border-radius: 20px;
     border: 1px solid #373867;
 }
 ::placeholder{
+    padding-left: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 17.58px;
     color: rgba(55, 56, 103, 0.43);
+}
+input[type="radio"]{
+    position: relative;
+    margin-left: 0;
+    margin-right: 33px;
+    cursor: pointer;
+    border: 2px #34636E;
+
+}
+.label-position-radio{
+    margin-top: 8px;
 }
 textarea{
     height: 174.7603302001953px;
     width: 917px;
     border-radius: 4px;
     resize: none;
+}
+input[type="submit"]{
+    height: 47px;
+    width: 178px;
+    border-radius: 5px;
+    padding: 14px 36px 14px 36px;
+    background: #AACE9B;
+    border-color: #AACE9B;
+    border-style: none;
 }

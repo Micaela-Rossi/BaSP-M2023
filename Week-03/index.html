@@ -72,19 +72,30 @@
         <section class="section-space">
             <h2 id="contact">contact<img src="img/icon-contact.png" alt="envelope icon"></h2>
             <form>
-                <label  for="name">Name</label>
-                <input type="text" id="name" placeholder="Insert your name" required>
-                <label for="surname">Surname</label>
-                <input type="text" id="surname" placeholder="Insert your surname" required>
-                <label for="email">E-mail</label>
-                <input type="text" id="email" placeholder="Insert your e-mail" required>
+                <label  for="name">
+                    Name<input type="text" id="name" placeholder="Insert your name" required>
+                </label>
+                <label for="surname">
+                    Surname<input type="text" id="surname" placeholder="Insert your surname" required>
+                </label>
+                <label for="email">
+                    E-mail<input type="text" id="email" placeholder="Insert your e-mail" required>
+                </label>
                 <p>Reason for contact:</p>
-                <input type="radio" id="query-suggestion" name="reason_contact" value="query_suggestion" required>
-                <label for="query-suggestion">I want to make a query or suggestion</label>
-                <input type="radio" id="claim" name="reason_contact" value="claim">
-                <label for="claim">I want to make a claim</label>
-                <input type="radio" id="memberships" name="reason_contact" value="memberships">
-                <label for="memberships">I want to know the memberships and costs</label>
+                <label for="query-suggestion" class="label-position-radio">
+                    <span class="checkmark"></span>
+                    <input type="radio" id="query-suggestion" name="reason_contact" value="query_suggestion" required>
+                    I want to make a query or suggestion
+                </label>
+                <label for="claim" class="label-position-radio">
+                    <span class="checkmark"></span>
+                    <input type="radio" id="claim" name="reason_contact" value="claim">I want to make a claim
+                </label>
+                <label for="memberships" class="label-position-radio">
+                    <span class="checkmark"></span>
+                    <input type="radio" id="memberships" name="reason_contact" value="memberships">I want to know the
+                    memberships and costs
+                </label>
                 <label for="textarea">Message</label>
                 <textarea placeholder="Type your message here" id="textarea" required></textarea>
                 <input type="submit" value="Send Message">
