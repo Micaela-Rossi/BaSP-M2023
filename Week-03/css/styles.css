@@ -234,7 +234,7 @@ aside ul li img{
 }
 #contact{
     position: relative;
-    margin-top: 49.5px;
+    padding-top: 49.5px;
     margin-left: 74px;
     font-weight: 700;
     font-size: 40px;
@@ -289,19 +289,27 @@ input[type="radio"]{
     margin-left: 0;
     margin-right: 33px;
     cursor: pointer;
-    border: 2px #34636E;
-
+    border: #34636E;
 }
 .label-position-radio{
     margin-top: 8px;
+}
+.message{
+    margin-top: 65px;
+    margin-bottom: 10px;
 }
 textarea{
     height: 174.7603302001953px;
     width: 917px;
     border-radius: 4px;
     resize: none;
+    border: 1px solid #E0E0E0;
 }
 input[type="submit"]{
+    display: inline-block;
+    position: absolute;
+    margin-top: 202px;
+    margin-left: -920px;
     height: 47px;
     width: 178px;
     border-radius: 5px;
@@ -309,4 +317,45 @@ input[type="submit"]{
     background: #AACE9B;
     border-color: #AACE9B;
     border-style: none;
+}
+input[type="reset"]{
+    margin-top: 20px;
+    margin-left: 230px;
+    display: inline-block;
+    position: relative;
+    padding: 14px 36px;
+    background: #FFFFFF;
+    border: 1px solid #373867;
+    border-radius: 5px;
+}
+.our-history-img{
+    position: absolute;
+    width: 1094px;
+    height: 765px;
+    left: 342px;
+    top: 3071px;
+    z-index: 0;
+}
+.our-history-h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 19px;
+    margin-left: 67px;
+}
+.our-history-p{
+    position: absolute;
+    width: 804px;
+    height: 322px;
+    left: 493px;
+    top: 3320px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
