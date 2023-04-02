@@ -10,9 +10,15 @@ body{
 h2{
     text-transform: uppercase;
 }
+#section-small-1{
+    height: 847px;
+}
+#section-small-2{
+    height: 864,5px;
+}
 .section-space{
     width: 1234px;
-    height: 848px;
+    height: 981px;
 }
 header{
     background-color: #373867;
@@ -53,6 +59,7 @@ aside a{
     color: #373867;
     cursor: pointer;
     text-decoration: none;
+    display: inline-block;
 }
 aside li{
     text-align: justify;
@@ -137,7 +144,7 @@ aside ul li img{
 }
 .main-reason-text{
     position: relative;
-    width: 35%;
+    width: 431px;
     height: 287px;
     left: 74px;
     top: 75px;
@@ -164,7 +171,6 @@ aside ul li img{
     border: 3px solid #373867;
 }
 /*revisado hacia arriba*/
-/*
 .how-can-we-help-img{
     position: absolute;
     height: 876px;
@@ -172,11 +178,11 @@ aside ul li img{
     left: 366px;
     top: 1022px;
     z-index: 0;
-}*/
+}
 .how-can-we-help-h2{
     position: relative;
     margin-left: 0px;
-    margin-top: 164px;
+    padding-top: 164px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -186,10 +192,11 @@ aside ul li img{
     color: #EBECF0;
 }
 #how-can-we-help-display p{
+    padding-top: 25px;
+    position: relative;
     height: 107px;
-    width: 351px;
+    width: 30%;
     z-index: 3;
-    padding: 14px 36px 14px 36px;
     background-color: #EBECF0;
     border: 1px solid #373867;
     border-radius: 5px;
@@ -197,6 +204,79 @@ aside ul li img{
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    line-height: 35px;
     text-align: center;
+    vertical-align: middle;
+    display: inline-table;
+}
+.position-p1{
+    position: relative;
+    margin-left: 169px;
+    margin-top: 91px;
+    Line height: 35.16px;
+}
+.position-p2{
+    position: relative;
+    margin-left: 154px;
+    margin-top: 91px;
+    Line height: 35.16px;
+}
+.position-p3{
+    position: relative;
+    margin-left: 169px;
+    margin-top: 182px;
+    Line height: 35.16px;
+}
+.position-p4{
+    position: relative;
+    margin-left: 154px;
+    margin-top: 182px;
+    Line height: 35.16px;
+}
+#contact{
+    position: relative;
+    margin-top: 49.5px;
+    margin-left: 74px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+#contact img{
+    width: 37.33px;
+    height: 30.55px;
+    margin-left: 20px;
+}
+form{
+    display: inline-block;
+    width: 35%;
+    margin-left: 79px;
+}
+form p{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+label{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+input[type="text"]{
+    margin-top: 22px;
+    height: 45px;
+    width: 293px;
+    border-radius: 20px;
+    border: 1px solid #373867;
+}
+::placeholder{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(55, 56, 103, 0.43);
+}
+textarea{
+    height: 174.7603302001953px;
+    width: 917px;
+    border-radius: 4px;
+    resize: none;
 }
