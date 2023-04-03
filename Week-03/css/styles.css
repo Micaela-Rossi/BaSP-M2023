@@ -7,6 +7,15 @@ body{
     width: 80%;
     float: right;
 }
+h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    padding-bottom: 10px;
+    margin-top: -15px;
+}
 h2{
     text-transform: uppercase;
 }
@@ -359,3 +368,73 @@ input[type="reset"]{
     color: #FFFFFF;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+.section-space h2{
+    position: relative;
+    margin-left: 99px;
+}
+.activities-membership{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color:#373867;
+    padding-top: 48.5px;
+    padding-bottom: 25px;
+}
+#membership-types{
+    color:#000000;
+    margin-bottom: 19px;
+    margin-left: -81.26px;
+}
+#left-list{
+    margin-left: 99px;
+}
+#left-list li{
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+#left-list li img{
+    padding-right: 87px;
+}/*
+.display-activities-memberships{
+    display:block;
+    width: 50%;
+}*/
+.membership-li{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 150px;
+    color: #000000;
+}
+#membership-types-display{
+    position: relative;
+    margin-left: 715px;
+    margin-top: -863px;
+}
+h3 img{
+    padding-right: 41.85px;
+    padding-bottom: -25px;
+}
+footer{
+    background-color: #373867;
+    color:#000000;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 0;
+    height: 118px;
+}
+.icons{
+    position: absolute;
+    margin-left: 633.74px;
+    margin-top: -725px;
+}
+.icons img{
+    padding-bottom: 200px;
+}
+/*input[type=radio]#option1 {
+    accent-color: pink;
+}*/
