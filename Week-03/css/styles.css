@@ -77,11 +77,16 @@ aside li{
 }
 .sidebar-logo{
     position:relative;
-    margin-top: 43px;
+    margin-top: 20px;
     margin-left: 95px;
     margin-right: 105px;
 }
-.nav-links{
+nav{
+    width: fit-content;
+    margin-left: 40px;
+}
+.sidebar-list{
+    position: relative;
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
@@ -89,32 +94,21 @@ aside li{
     text-align: center;
     background-color: #EBECF0;
     color:#373867;
-    height: 69.96991729736328px;
-    width: 205px;
+    height: 69.97px;
+    width: 80%;
     border-radius: 5px;
     border: 1px solid #373867;
-    padding: 14px 36px 14px 36px;
+    margin-top: 41px;
+    font-style: normal;
 }
 #button-home{
-    font-size: 30px;
     font-weight: 700;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: center;
-    background-color: #373867;
     color:#F7FBF5;
-    height: 69.96991729736328px;
-    border-radius: 5px;
-    padding: 14px 36px 14px 36px;
-}
-.sidebar-list{
-    margin-top: 337,13px;
-    margin-bottom: 41,1px;
-    padding: 14px 36px 14px 36px;
+    background-color: #373867;
 }
 aside h2{
+    margin-top: 35px;
     position: relative;
-    margin-left: 29px;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -122,8 +116,8 @@ aside h2{
     text-align: center;
 }
 .other-options-li a{
+    margin-top: 10px;
     position: relative;
-    margin-left: 36px;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -137,6 +131,7 @@ aside h2{
     font-size: 20px;
     line-height: 23px;
     margin-left: 12px;
+    align-items: center;
 }
 aside ul li img{
     margin-left: 36px;
@@ -182,7 +177,6 @@ aside ul li img{
     background: #373867;
     border: 3px solid #373867;
 }
-/*revisado hacia arriba*/
 .how-can-we-help-img{
     position: absolute;
     height: 876px;
@@ -322,7 +316,16 @@ textarea{
     resize: none;
     border: 1px solid #E0E0E0;
 }
+textarea::placeholder{
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17.58px;
+    color: rgba(55, 56, 103, 0.43);
+}
 input[type="submit"]{
+    cursor: pointer;
     display: inline-block;
     position: relative;
     height: 47px;
@@ -335,6 +338,7 @@ input[type="submit"]{
     color:#373867;
 }
 input[type="reset"]{
+    cursor: pointer;
     margin-top: 20px;
     margin-left: 52px;
     display: inline-block;
