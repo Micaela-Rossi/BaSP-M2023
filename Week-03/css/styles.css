@@ -6,7 +6,7 @@ body{
     color: #373867;
     width: 80%;
     float: right;
-    height: 5200px;
+    height: 5000px;
 }
 h3{
     font-style: normal;
@@ -16,7 +16,7 @@ h3{
     color: #000000;
     padding-bottom: 10px;
     margin-top: -15px;
-    width: 200%;
+    width: 150%;
 }
 h2{
     text-transform: uppercase;
@@ -25,7 +25,7 @@ h2{
     height: 847px;
 }
 #section-small-2{
-    height: 982.5px;
+    height: 951px;
 }
 .section-space{
     width: 80%;
@@ -293,13 +293,20 @@ input[type="text"]{
     color: rgba(55, 56, 103, 0.43);
 }
 input[type="radio"]{
-    accent-color: #FFFFFF;
-    position: relative;
-    margin-left: 0;
-    margin-right: 33px;
     cursor: pointer;
-    border: 3px #34636E;
-
+    margin: 0;
+    margin-right: 33px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #373867;
+    border-radius: 50%;
+    appearance: none;
+    background-color: #fff;
+    font: inherit;
+    color: currentColor;
+}
+input[type="radio"]:checked {
+    border: 3px solid #373867;
 }
 .label-position-radio{
     margin-top: 8px;
@@ -404,7 +411,7 @@ input[type="reset"]{
     padding-right: 87px;
 }
 .membership-li{
-    width: 200%;
+    width: 150%;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -436,8 +443,28 @@ h3 img{
 footer{
     background-color: #373867;
     color:#000000;
-    position: relative;
     margin-bottom: 0;
     margin-right: 0;
     height: 118px;
+}
+footer img{
+    position: relative;
+    padding-right: 20px;
+    display: inline-block;
+    width: 6.5%;
+    float: right;
+    margin-top: 20px;
+}
+#gmail-icon{
+    padding-top: 15px;
+}
+footer p{
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    width: 526px;
+    padding-top: 38px;
+    margin-left: 58px;
+    margin-top: 10px;
 }
