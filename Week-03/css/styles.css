@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
-body{
+body {
     background-color: #FFFFFF;
     font-family: 'Roboto';
     font-size: 20px;
     color: #373867;
-    width: 80%;
+    width: 100vw;
     float: right;
-    height: 5000px;
 }
-h3{
+main {
+    margin-left:20vw;
+}
+h3 {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -16,30 +18,30 @@ h3{
     color: #000000;
     padding-bottom: 10px;
     margin-top: -15px;
-    width: 150%;
 }
-h2{
+h2 {
     text-transform: uppercase;
 }
-#section-small-1{
+#section-small-first {
     height: 847px;
 }
-#section-small-2{
+#section-small-second {
     height: 951px;
 }
-.section-space{
-    width: 80%;
+.section-space {
+    width: 80vw;
     height: 981px;
 }
-header{
+header {
     background-color: #373867;
     color: #AACE9B;
     position: relative;
     margin-top: 0;
     margin-right: 0;
     height: 135px;
+    margin-left:20vw;
 }
-h1{
+h1 {
     font-size: 40px;
     text-transform: uppercase;
     position: absolute;
@@ -49,7 +51,7 @@ h1{
     font-weight: 700;
     line-height: 47px;
 }
-header img{
+header img {
     position: relative;
     height:45px;
     width: 233.32px;
@@ -57,35 +59,35 @@ header img{
     top: 45px;
     bottom: 45px;
 }
-aside{
-    font-family: 'Roboto';
+aside {
     background-color: #AACE9B;
     bottom: 0;
     top: 0;
     left: 0;
-    width: 20%;
+    width: 20;
     position: fixed;
 }
-aside a{
+aside a {
     color: #373867;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
 }
-aside li{
+aside li {
     text-align: justify;
 }
-.sidebar-logo{
+.sidebar-logo {
     position:relative;
     margin-top: 20px;
     margin-left: 95px;
     margin-right: 105px;
 }
-nav{
+nav {
     width: fit-content;
-    margin-left: 40px;
+    margin-left: 30px;
 }
-.sidebar-list{
+.sidebar-list a {
+    width: 32.5%;
     position: relative;
     font-size: 20px;
     font-weight: 600;
@@ -94,19 +96,18 @@ nav{
     text-align: center;
     background-color: #EBECF0;
     color:#373867;
-    height: 69.97px;
-    width: 80%;
     border-radius: 5px;
     border: 1px solid #373867;
     margin-top: 41px;
     font-style: normal;
+    padding: 23px 71px;
 }
-#button-home{
+#button-home {
     font-weight: 700;
     color:#F7FBF5;
     background-color: #373867;
 }
-aside h2{
+aside h2 {
     margin-top: 35px;
     position: relative;
     font-style: normal;
@@ -115,7 +116,7 @@ aside h2{
     line-height: 35px;
     text-align: center;
 }
-.other-options-li a{
+.other-options-list a {
     margin-top: 10px;
     position: relative;
     font-style: normal;
@@ -124,7 +125,7 @@ aside h2{
     line-height: 23px;
     text-decoration: none;
 }
-.mail-maps-li a{
+.mail-maps-list a {
     position: relative;
     font-style: normal;
     font-weight: 600;
@@ -133,11 +134,13 @@ aside h2{
     margin-left: 12px;
     align-items: center;
 }
-aside ul li img{
+aside ul li img {
     margin-left: 36px;
     margin-top: 16px;
 }
-.main-reason-h2{
+.position-h2 {
+    position: relative;
+    margin-left: 68px;
     width: 431px;
     height: 59px;
     top: 68px;
@@ -146,10 +149,7 @@ aside ul li img{
     line-height: 35px;
     z-index: 2;
 }
-#position-h2{
-    margin-left: 68px;
-}
-.main-reason-text{
+.main-reason-text-position {
     position: relative;
     width: 431px;
     height: 287px;
@@ -160,7 +160,7 @@ aside ul li img{
     z-index: 2;
     font-weight: 600;
 }
-.main-reason-img{
+#section-small-first img {
     position: absolute;
     height: 684px;
     width: 750px;
@@ -168,16 +168,14 @@ aside ul li img{
     top: 226px;
     z-index: 1;
 }
-.color-line{
-    position: relative;
-    width: 1019px;
-    height: 0px;
-    left: 91px;
+.color-line {
+    margin: auto;
+    width: 1016px;
+    height: 6px;
     top: 0;
     background: #373867;
-    border: 3px solid #373867;
 }
-.how-can-we-help-img{
+.how-can-we-help img {
     position: absolute;
     height: 876px;
     width: 1122px;
@@ -185,11 +183,10 @@ aside ul li img{
     top: 1022px;
     z-index: 0;
 }
-#how-can-we-help-h2{
+.how-can-we-help h2 {
     margin-left: 355px;
     width: 500px;
     padding-top: 164px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -197,7 +194,7 @@ aside ul li img{
     text-align: center;
     color: #EBECF0;
 }
-#how-can-we-help-display p{
+#how-can-we-help-display p {
     padding-top: 25px;
     position: relative;
     height: 107px;
@@ -214,27 +211,27 @@ aside ul li img{
     vertical-align: middle;
     display: inline-table;
 }
-.position-p1{
+.position-p1 {
     margin-left: 219px;
     margin-top: 91px;
     line-height: 35.16px;
 }
-.position-p2{
+.position-p2 {
     margin-left: 154px;
     margin-top: 91px;
     line-height: 35.16px;
 }
-.position-p3{
+.position-p3 {
     margin-left: 219px;
     margin-top: 182px;
     line-height: 35.16px;
 }
-.position-p4{
+.position-p4 {
     margin-left: 154px;
     margin-top: 182px;
     line-height: 35.16px;
 }
-#contact{
+.contact {
     position: relative;
     padding-top: 49.5px;
     margin-left: 74px;
@@ -242,22 +239,22 @@ aside ul li img{
     font-size: 40px;
     line-height: 47px;
 }
-#contact img{
+.contact img {
     width: 37.33px;
     height: 30.55px;
     margin-left: 20px;
 }
-form{
+form {
     margin-left: 79px;
 }
-form p{
+form p {
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     margin-top: 32px;
     margin-bottom: 24px;
 }
-label{
+label {
     margin-top: 23px;
     font-weight: 700;
     font-size: 30px;
@@ -265,20 +262,20 @@ label{
     display: inline-block;
     width: 100%;
 }
-label input{
+label input {
     margin-left: 32px;
 }
-#surname{
+#surname {
     margin-left: 58px;
 }
-input[type="text"]{
+input[type="text"] {
     margin-left: 96px;
     height: 45px;
     width: 293px;
     border-radius: 20px;
     border: 1px solid #373867;
 }
-::placeholder{
+::placeholder {
     padding-left: 20px;
     font-style: normal;
     font-weight: 700;
@@ -286,7 +283,7 @@ input[type="text"]{
     line-height: 17.58px;
     color: rgba(55, 56, 103, 0.43);
 }
-input[type="radio"]{
+input[type="radio"] {
     cursor: pointer;
     margin: 0;
     margin-right: 33px;
@@ -302,21 +299,21 @@ input[type="radio"]{
 input[type="radio"]:checked {
     border: 3px solid #373867;
 }
-.label-position-radio{
+.label-position-radio {
     margin-top: 8px;
 }
-.message{
+.message {
     margin-top: 65px;
     margin-bottom: 10px;
 }
-textarea{
+textarea {
     height: 174.7603302001953px;
-    width: 917px;
+    width: 90%;
     border-radius: 4px;
     resize: none;
     border: 1px solid #E0E0E0;
 }
-textarea::placeholder{
+textarea::placeholder {
     padding-left: 20px;
     font-style: normal;
     font-weight: 700;
@@ -324,7 +321,7 @@ textarea::placeholder{
     line-height: 17.58px;
     color: rgba(55, 56, 103, 0.43);
 }
-input[type="submit"]{
+input[type="submit"] {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -337,7 +334,7 @@ input[type="submit"]{
     border-style: none;
     color:#373867;
 }
-input[type="reset"]{
+input[type="reset"] {
     cursor: pointer;
     margin-top: 20px;
     margin-left: 52px;
@@ -349,7 +346,7 @@ input[type="reset"]{
     border-radius: 5px;
     color:#373867;
 }
-.our-history-img{
+.our-history img {
     position: absolute;
     width: 1094px;
     height: 765px;
@@ -357,7 +354,7 @@ input[type="reset"]{
     top: 3071px;
     z-index: 0;
 }
-#our-history-h2{
+.our-history h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -366,7 +363,7 @@ input[type="reset"]{
     padding-bottom: 19px;
     margin-left: 57px;
 }
-.our-history-p{
+.our-history p {
     position: absolute;
     width: 804px;
     height: 322px;
@@ -380,12 +377,9 @@ input[type="reset"]{
     color: #FFFFFF;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-.section-space h2{
-    position: relative;
-    margin-left: 99px;
-}
-.activities-membership{
+.activities-membership h2 {
     font-style: normal;
+    margin-left: 99px;
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -393,29 +387,27 @@ input[type="reset"]{
     padding-top: 48.5px;
     padding-bottom: 25px;
 }
-#membership-types{
-    width: 200%;
+#membership-types {
+    width: 400px;
     color:#000000;
     margin-bottom: 19px;
     margin-left: -81.26px;
 }
-#left-list p{
+#left-list p {
     display: inline-block;
     vertical-align: middle;
-    width: 20%;
     padding-bottom: 80px;
 }
-#left-list li{
+#left-list li {
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     margin-left: 99px;
 }
-#left-list li img{
+#left-list li img {
     padding-right: 87px;
 }
-.membership-li{
-    width: 150%;
+.membership-info {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -424,45 +416,45 @@ input[type="reset"]{
     margin-bottom: 100px;
     color: #000000;
 }
-#membership-types-display{
+#membership-types-display {
     position: relative;
     margin-left: 715px;
     margin-top: -920px;
 }
-.membership-list-position{
+.membership-list-position {
     padding-top: 20px;
 }
-h3 img{
+h3 img {
     padding-right: 41.85px;
     padding-bottom: -25px;
 }
-.icons{
+.icons {
     position: absolute;
     margin-left: 633.74px;
     margin-top: -750px;
 }
-.icons img{
+.icons img {
     padding-bottom: 225px;
 }
-footer{
+footer {
     background-color: #373867;
     color:#000000;
     margin-bottom: 0;
     margin-right: 0;
     height: 118px;
+    margin-left:20vw;
 }
-footer img{
+footer img {
     position: relative;
     padding-right: 20px;
-    display: inline-block;
     width: 6.5%;
     float: right;
     margin-top: 20px;
 }
-#gmail-icon{
+#gmail-icon {
     padding-top: 15px;
 }
-footer p{
+footer p {
     position: absolute;
     font-weight: 600;
     font-size: 20px;
