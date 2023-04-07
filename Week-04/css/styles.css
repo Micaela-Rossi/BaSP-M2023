@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+.flex-container{
+    display: flex;
+}
+.display-header-main-footer{
+    flex-direction: column;
+}
+.hide-mobile{
+    display: none;
+}
+h1, h2{
+    text-transform: uppercase;
+}
+.section-space{
+    height: 100vh;
+}
+#section-small-first{
+    height: 89.6vh;
+}
+@media screen and (min-width: 480px){
+    .hide-mobile{
+        display:block
+    }
+}

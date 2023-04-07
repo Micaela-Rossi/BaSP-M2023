@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="./css/header.css">
+        <link rel="stylesheet" type="text/css" href="./css/aside.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/footer.css">
+        <title>Mega Rocket S.A | Home</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="flex-container">
+        <aside class="flex-container sidebar hide-mobile">
+            <img src="img/logo-radium-1.png" alt="Radium Rocket Logo" class="sidebar-logo">
+            <nav class="flex-container nav-container">
+                <ul class="flex-container buttons-container">
+                    <li class="sidebar-list"><a href="#" id="button-home">HOME</a></li>
+                    <li class="sidebar-list"><a href="">SIGN UP</a></li>
+                    <li class="sidebar-list"><a href="">LOG IN</a></li>
+                    <li class="sidebar-list contact-button"><a href="">CONTACT</a></li>
+                </ul>
+                <h2 class="sidebar-h2">other options</h2>
+                <ul class="flex-container other-options-list">
+                    <li><a href="#howCanWeHelpYou">How can we help you?</a></li>
+                    <li><a href="#ourHistory">Our history</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li class="mail-maps-list">
+                    <a href="mailto:Info@Rocket.com"><img src="img/icon-contact.png" alt="envelope icon">
+                    Info@Rocket.com</a>
+                </li>
+                <li class="mail-maps-list">
+                    <a href="https://www.google.com/maps/place/Rosario,+Santa+Fe/@-32.9520457,-60.76668,12z/data=!3m1!4
+                    b1!4m6!3m5!1s0x95b6539335d7d75b:0xec4086e90258a557!8m2!3d-32.9587022!4d-60.6930416!16zL20vMDJ0YjE3?
+                    authuser=0" target="_blank"><img src="img/icon-home.png" alt="home icon">Rosario, Argentina.</a>
+                </li>
+                <li class="mail-maps-list">
+                     <a href="tel:000000000" target="_blank"><img src="img/icon-whatsapp.png" alt="whatsapp icon">(000)
+                     000-000</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="flex-container display-header-main-footer">
+            <header class="flex-container header-footer-style">
+                <img src="img/sidebar-icon.png" class="hide-desktop">
+                <img src="img/logo-radium-2.png" alt="Radium Rocket name" class="hide-mobile logo-header">
+                <h1 class="home-heading">MEGA ROCKET S.A</h1>
+            </header>
+            <main>
+                <section class="flex-container first-section section-space" id="section-small-first">
+                    <h2 Class="first-section-h2">the main reason of health</h2>
+                    <div class="mobile-position-change flex-container">
+                        <p Class="first-section-text">
+                            Component Body Maecenas interdum faucibus quam ac interdum. Donec facilisis vitae ipsum a ullamcorper.
+                            Proin interdum suscipit velit. Nullam pulvinar efficitur sapien ac rhoncus. Aenean scelerisque, nisi at
+                            interdum laoreet, est nisi sagittis enim, nec eleifend justo orci quis nisl. Morbi fringilla felis non
+                            ipsum dapibus, eget ornare tortor hendrerit. Curabitur ac eleifend orci. Donec condimentum ex non leo v
+                            olutpat pretium. Cras aliquet quam quis semper egestas. Sed at ultricies turpis. Aenean cursus porta el
+                            eifend.
+                        </p>
+                        <img src="img/img-landing-1.png" alt="Man and woman with dumbbells" class="first-section-img">
+                    </div>
+                </section>
+                <div class="color-line"></div>
+                <section class="section-space how-can-we-help">
+                    <!--<img src="img/img-landing-2.png" alt="blur photo of man with a dumbbell">-->
+                    <h2>how can we help you?</h2>
+                    <div id="how-can-we-help-display">
+                        <p class="position-p1">TURN RESERVATION</p>
+                        <p class="position-p2">MEMBERSHIP MANAGEMENT</p>
+                        <p class="position-p3">AGENT DISPLAY</p>
+                        <p class="position-p4">CONTACT AND SUGGESTION FORM</p>
+                    </div>
+                </section>
+                <div class="color-line"></div>
+                <section class="section-space">
+                    <h2 class="contact">contact<img src="img/icon-contact.png" alt="envelope icon"></h2>
+                    <form>
+                        <label  for="name">
+                            Name<input type="text" id="name" placeholder="Insert your name" required>
+                        </label>
+                        <label for="surname">
+                            Surname<input type="text" id="surname" placeholder="Insert your surname" required>
+                        </label>
+                        <label for="email">
+                            E-mail<input type="text" id="email" placeholder="Insert your e-mail" required>
+                        </label>
+                        <p>Reason for contact:</p>
+                        <label for="query-suggestion" class="label-position-radio">
+                            <span class="checkmark"></span>
+                            <input type="radio" id="query-suggestion" name="reason_contact" value="query_suggestion" required>
+                            I want to make a query or suggestion
+                        </label>
+                        <label for="claim" class="label-position-radio">
+                            <span class="checkmark"></span>
+                            <input type="radio" id="claim" name="reason_contact" value="claim">I want to make a claim
+                        </label>
+                        <label for="memberships" class="label-position-radio">
+                            <span class="checkmark"></span>
+                            <input type="radio" id="memberships" name="reason_contact" value="memberships">I want to know the
+                            memberships and costs
+                        </label>
+                        <label for="textarea" class="message">Message</label>
+                        <textarea placeholder="Type your message here" id="textarea" required></textarea>
+                        <input type="submit" value="Send Message">
+                        <input type="reset" value="Reset">
+                    </form>
+                </section>
+                <div class="color-line"></div>
+                <section class="section-space our-history">
+                    <!--<img src="img/img-landing-3.png" alt="woman doing exercise">-->
+                    <h2>our history</h2>
+                    <p>
+                        Quisque pellentesque lacus metus, sodales tempor leo tincidunt ut. Curabitur quis elit ut lectus vehicu
+                        la rutrum eu at sem. Nam eget quam mi. Donec gravida metus ante, eget vulputate nibh posuere nec. Donec
+                        iaculis consequat neque at vulputate. Nulla tincidunt diam justo, eget facilisis nibh porttitor id. Sus
+                        pendisse rhoncus elit non dapibus ullamcorper. Proin in tempor quam. Nulla in eros est.
+                    </p>
+                </section>
+                <div class="color-line"></div>
+                <section class="section-space activities-membership"  id="section-small-second">
+                    <h2 >activities</h2>
+                    <ul class="display-activities-memberships" id="left-list">
+                        <li>
+                            <img src="img/icon-crossfit.png">
+                            <p>CrossFit</p>
+                        </li>
+                        <li>
+                            <img src="img/icon-fitness.png">
+                            <p>Fitness</p>
+                        </li>
+                        <li>
+                            <img src="img/icon-spinning.png">
+                            <p>Spinning</p>
+                        </li>
+                        <li>
+                            <img src="img/icon-functional.png">
+                            <p>Functional</p>
+                        </li>
+                        <li>
+                            <img src="img/icon-boxing.png">
+                            <p>Box</p>
+                        </li>
+                    </ul>
+                    <ul class="display-activities-memberships" id="membership-types-display">
+                        <h2 id="membership-types">membership types</h2>
+                        <ul class="membership-list-position">
+                            <li>
+                                <h3>Black membership</h3>
+                                <ul class="membership-info">
+                                    <li>- Free access to the weight room</li>
+                                    <li>- Free acces to classes prior</li>
+                                    <li>- Registration</li>
+                                    <li>- Personalized monitoring by coach</li>
+                                    <li>- Grid display</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Classic membership</h3>
+                                <ul class="membership-info">
+                                    <li>- Free access to the weight room</li>
+                                    <li>- Personalized monitoring by a coach</li>
+                                    <li>- Grid display</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Only classes membership</h3>
+                                <ul class="membership-info">
+                                    <li>- Free access to the weight room</li>
+                                    <li>- Grid display</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="icons">
+                        <li><img src="img/icon-black-membership.png" alt="Shield icon"></li>
+                        <li><img src="img/icon-classic-membership.png" alt="Lighting icon"></li>
+                        <li><img src="img/icon-only-classes-membership.png" alt="Hearth icon"></li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="header-footer-style">
+                <p>Copyright © 2022 Radium Rocket. All rights reserved.</p>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/icon-instagram.png" alt="Instagram logo"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/icon-facebook.png" alt="Facebook logo"></a>
+                <a href="mailto:Info@Rocket.com" target="_blank"><img src="img/icon-gmail.png" alt="Gmail logo"  id="gmail-icon"></a>
+            </footer>
+        </div>
+    </body>
+</html>

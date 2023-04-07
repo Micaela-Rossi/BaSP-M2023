@@ -1,0 +1,46 @@
+.sidebar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.sidebar-logo{
+    width: 17%;
+    height: 12%;
+}
+.nav-container{
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons-container{
+    flex-direction: column;
+}
+.sidebar-list{
+    padding: 29% 41%;
+    width: 51%;
+    background-color: #EBECF0;
+    border-radius: 5px;
+    border: 1px solid #373867;
+    font-size: 1.25em;
+}
+.sidebar-h2{
+    display: none;
+}
+.other-options-list{
+    flex-direction: column;
+    display: none;
+}
+.contact-button{
+    display: none;
+}
+@media screen and (min-width: 480px){
+    .sidebar{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 22vw;
+        height: 100vh;
+        background-color: #AACE9B;
+    }
+}

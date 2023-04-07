@@ -1,0 +1,42 @@
+.header-footer-style{
+    justify-content: center;
+    align-items: center;
+    height: 10.4vh;
+    width: 100%;
+    background-color: #373867;
+}
+.home-heading{
+    margin-left: 4%;
+    margin-right: 3%;
+    font-size: 1.5em;
+    color:#AACE9B;
+}
+.hide-desktop{
+    margin-left: 2%;
+    margin-right: 4.5%;
+}
+@media screen and (min-width: 480px) {
+    .header-footer-style{
+        justify-content:space-around;
+        align-items: center;
+        height: 10.4vh;
+        width: 100%;
+        background-color: #373867;
+    }
+    .home-heading{
+        padding-bottom: 2%;
+        margin-right: auto;
+        margin-left: 3%;
+    }
+    .hide-desktop{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+    .logo-header{
+        margin-left: 4%
+    }
+    .home-heading{
+        padding-bottom: 1%;
+    }
+}
