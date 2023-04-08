@@ -2,6 +2,7 @@
 body{
     font-family: 'Roboto', Arial, Helvetica;
     color: #373867;
+    z-index: 3;
 }
 .flex-container{
     display: flex;
@@ -22,6 +23,9 @@ h1, h2{
 #section-small-first{
     height: 89.6vh;
 }
+.color-line{
+    display: none;
+}
 @media screen and (min-width: 481px){
     .section-space{
         width: 78vw;
@@ -39,6 +43,16 @@ h1, h2{
 @media screen and (min-width: 1025px){
     .section-space{
         width: 80vw;
+    }
+    .color-line{
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 0.75vh;
+        background: #373867;
+    }
+    #section-small-first{
+        height: 86.25vh;
     }
     .display-header-main-footer{
         width: 80vw;

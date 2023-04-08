@@ -5,7 +5,7 @@
     width: 100%;
     background-color: #373867;
 }
-.home-heading{
+.first-section-heading{
     margin-left: 4%;
     margin-right: 3%;
     font-size: 1.5em;
@@ -26,7 +26,7 @@
         width: 30%;
         margin-left: 4%;
     }
-    .home-heading{
+    .first-section-heading{
         width: 50%;
         margin-left: 4%;
         font-size: 1.35em;
@@ -40,7 +40,7 @@
         width: 100%;
         background-color: #373867;
     }
-    .home-heading{
+    .first-section-heading{
         padding-bottom: 2%;
         margin-right: auto;
         margin-left: 3%;
@@ -51,7 +51,7 @@
     .logo-header{
         margin-left: 4%
     }
-    .home-heading{
+    .first-section-heading{
         padding-bottom: 1%;
         font-size: 2em;
     }
