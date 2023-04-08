@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+body{
+    font-family: 'Roboto', Arial, Helvetica;
+    color: #373867;
+}
 .flex-container{
     display: flex;
 }
@@ -12,13 +16,31 @@ h1, h2{
     text-transform: uppercase;
 }
 .section-space{
+    width: 100vw;
     height: 100vh;
 }
 #section-small-first{
     height: 89.6vh;
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 481px){
+    .section-space{
+        width: 78vw;
+    }
     .hide-mobile{
-        display:block
+        display: block;
+    }
+    .display-header-main-footer{
+        justify-content: flex-end;
+        width: 78vw;
+    }
+}
+@media screen and (min-width: 769px){
+}
+@media screen and (min-width: 1025px){
+    .section-space{
+        width: 80vw;
+    }
+    .display-header-main-footer{
+        width: 80vw;
     }
 }
