@@ -1,57 +1,57 @@
-.header-footer-style{
+.header-footer-style {
     justify-content: center;
     align-items: center;
     height: 10.4vh;
     width: 100%;
     background-color: #373867;
 }
-.first-section-heading{
+.first-section-heading {
     margin-left: 4%;
     margin-right: 3%;
-    font-size: 1.5em;
-    color:#AACE9B;
+    font-size: 1.4em;
+    color: #AACE9B;
 }
-.hide-desktop{
+.hide-desktop {
     margin-left: 2%;
     margin-right: 4.5%;
 }
-@media screen and (min-width: 481px){
-    .header-footer-style{
+@media screen and (min-width: 481px) {
+    .header-footer-style {
         justify-content: flex-start;
     }
-    .hide-desktop{
+    .hide-desktop {
         display: none;
     }
-    .logo-header{
+    .logo-header {
         width: 30%;
         margin-left: 4%;
     }
-    .first-section-heading{
+    .first-section-heading {
         width: 50%;
         margin-left: 4%;
         font-size: 1.35em;
     }
 }
 @media screen and (min-width: 769px) {
-    .header-footer-style{
+    .header-footer-style {
         justify-content: space-around;
         align-items: center;
         height: 10.4vh;
         width: 100%;
         background-color: #373867;
     }
-    .first-section-heading{
+    .first-section-heading {
         padding-bottom: 2%;
         margin-right: auto;
         margin-left: 3%;
         font-size: 1.75em;
     }
 }
-@media screen and (min-width: 1025px){
-    .logo-header{
+@media screen and (min-width: 1025px) {
+    .logo-header {
         margin-left: 4%
     }
-    .first-section-heading{
+    .first-section-heading {
         padding-bottom: 1%;
         font-size: 2em;
     }

@@ -77,41 +77,53 @@
                     </div>
                 </section>
                 <div class="color-line"></div>
-                <section class="section-space">
-                    <h2 class="contact">contact<img src="img/icon-contact.png" alt="envelope icon"></h2>
-                    <form>
-                        <label  for="name">
-                            Name<input type="text" id="name" placeholder="Insert your name" required>
-                        </label>
-                        <label for="surname">
-                            Surname<input type="text" id="surname" placeholder="Insert your surname" required>
-                        </label>
-                        <label for="email">
-                            E-mail<input type="text" id="email" placeholder="Insert your e-mail" required>
-                        </label>
-                        <p>Reason for contact:</p>
-                        <label for="query-suggestion" class="label-position-radio">
-                            <span class="checkmark"></span>
-                            <input type="radio" id="query-suggestion" name="reason_contact" value="query_suggestion" required>
-                            I want to make a query or suggestion
-                        </label>
-                        <label for="claim" class="label-position-radio">
-                            <span class="checkmark"></span>
-                            <input type="radio" id="claim" name="reason_contact" value="claim">I want to make a claim
-                        </label>
-                        <label for="memberships" class="label-position-radio">
-                            <span class="checkmark"></span>
-                            <input type="radio" id="memberships" name="reason_contact" value="memberships">I want to know the
-                            memberships and costs
-                        </label>
-                        <label for="textarea" class="message">Message</label>
-                        <textarea placeholder="Type your message here" id="textarea" required></textarea>
-                        <input type="submit" value="Send Message">
-                        <input type="reset" value="Reset">
+                <section class="section-space third-section flex-container">
+                    <h2 class="third-section-heading flex-container">contact<img src="img/icon-contact.png" alt="envelope icon" class="third-section-img"></h2>
+                    <form class="third-section-form flex-container">
+                        <div class="form-input-text flex-container">
+                            <div class="form-input-text-colums flex-container">
+                                <label  for="name" class="labels-data form-item">Name</label>
+                                <label for="surname" class="labels-data form-item">Surname</label>
+                                <label for="email" class="labels-data form-item">E-mail</label>
+                            </div>
+                            <div class="form-input-text-colums flex-container">
+                                <input type="text" id="name" placeholder="Insert your name" required>
+                                <input type="text" id="surname" placeholder="Insert your surname" required>
+                                <input type="email" id="email" placeholder="Insert your e-mail" required>
+                            </div>
+                        </div>
+                        <p class="tablet-fix form-item">Reason for contact:</p>
+                        <div class="flex-container input-radio-distribution">
+                            <div class="radio-colums flex-container">
+                                <input type="radio" id="query-suggestion" name="reason_contact"
+                                value="query_suggestion"
+                                required class="radio-input form-item">
+                                <input type="radio" id="claim" name="reason_contact" value="claim" class="radio-input form-item">
+                                <input type="radio" id="memberships" name="reason_contact" value="memberships" class=
+                                "radio-input form-item">
+                            </div>
+                            <div class="radio-colums flex-container">
+                                <label for="query-suggestion" class="label-radio form-item"">
+                                    <span class="checkmark"></span>I want to make a query or suggestion
+                                </label>
+                                <label for="claim" class="label-radio form-item"">
+                                    <span class="checkmark"></span>I want to make a claim
+                                </label>
+                                <label for="memberships" class="label-radio form-item"">
+                                    <span class="checkmark"></span>I want to know the memberships and costs
+                                </label>
+                            </div>
+                        </div>
+                        <label for="textarea" class="tablet-fix label-textarea form-item">Message</label>
+                        <textarea placeholder="Type your message here" id="textarea" required class="textarea-input form-item"></textarea>
+                        <div class="flex-container form-buttons">
+                            <input type="submit" value="Send Message" class="send-message-button form-item">
+                            <input type="reset" value="Reset" class="reset-button form-item">
+                        </div>
                     </form>
                 </section>
                 <div class="color-line"></div>
-                <section class="section-space our-history">
+                <section class="section-space fourth-section">
                     <!--<img src="img/img-landing-3.png" alt="woman doing exercise">-->
                     <h2>our history</h2>
                     <p>
