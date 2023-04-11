@@ -1,0 +1,22 @@
+.footer-resize {
+    height: 9.6vh;
+}
+.footer-text {
+    width: 80%;
+    margin-left: 2vw;
+    font-size: 0.5em;
+    color: black;
+}
+.img-links-footer {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+@media screen and (min-width: 481px) {
+    .footer-links {
+        width: 45%;
+    }
+    .img-links-footer {
+        
+    }
+}

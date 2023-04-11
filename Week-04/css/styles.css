@@ -4,6 +4,9 @@ body {
     color: #373867;
     z-index: 3;
 }
+.black-text {
+    color: black;
+}
 .flex-container {
     display: flex;
 }
