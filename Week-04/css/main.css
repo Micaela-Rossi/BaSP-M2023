@@ -10,6 +10,7 @@
 }
 .first-section-text {
     width: 89vw;
+    max-height: 33vh;
     margin-top: 2.48vh;
     font-weight: 400;
     font-size: 0.75em;
@@ -35,8 +36,7 @@
     background-repeat: no-repeat;
 }
 .second-section-heading {
-    width: 80vw;
-    margin-top: 5vh;
+    margin: 7vh auto;
     font-size: 2.5em;
     font-weight: 700;
     text-align: center;
@@ -209,7 +209,6 @@ textarea::placeholder {
 .fifth-section-membership {
     flex-direction: column;
     align-items: center;
-    height: 40%;
 }
 .membership-heading {
     margin-bottom: 4vh;
@@ -254,12 +253,13 @@ textarea::placeholder {
         font-size: 1.25em;
     }
     .first-section-img {
-        height: 51vh;
+        max-height: 45vh;
         width: 100%;
         margin-bottom: 3vh;
     }
     .first-section-text {
-        width: 79%;
+        width: 70vw;
+        margin-top: 5vh;
         text-shadow: none;
         font-weight: 600;
         line-height: 1em;
@@ -340,7 +340,8 @@ textarea::placeholder {
         height: 50vh;
     }
     .fifth-section {
-        margin-top: -8vh;
+        height: 125vh;
+        margin-top: -9vh;
     }
     .icon-activities {
         width: 50px;
@@ -367,7 +368,6 @@ textarea::placeholder {
         height: auto;
     }
     .first-section-h2 {
-        margin-top: 7vh;
         font-size: 2em;
     }
     .first-section-text {
@@ -440,6 +440,9 @@ textarea::placeholder {
     }
     .fifth-section h2 {
         font-size: 1.25em;
+    }
+    .fifth-section-activities {
+       margin-top: 4vh;
     }
     .membership-info-list {
         font-size: 65%;
@@ -614,10 +617,16 @@ textarea::placeholder {
     .icon-membership {
         width: 3.5vw;
     }
+    .membership-heading {
+        margin-bottom: 2vw;
+    }
     .membership-info-distribution {
         margin-left: 0;
         margin-top: 5vh;
         margin-bottom: 10vh;
+    }
+    .desktop-position-fix {
+        margin-bottom: 3vh;
     }
     .membership-info-list {
         font-size: 0.5em;

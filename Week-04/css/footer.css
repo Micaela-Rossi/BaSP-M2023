@@ -14,9 +14,25 @@
 }
 @media screen and (min-width: 481px) {
     .footer-links {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .footer-links {
         width: 45%;
     }
     .img-links-footer {
-        
+        width: 42px;
+        height: 42px;
+        margin: 11px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .footer-links {
+        width: 30%;
+    }
+    .footer-text {
+        font-size: 1.5vw;
+        padding-left: 5vw;
     }
 }
