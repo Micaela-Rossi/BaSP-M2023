@@ -240,7 +240,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 481px) {
     .first-section {
-        justify-content: space-between;
+        justify-content: center;
     }
     .mobile-position-change {
         margin-bottom: 15%;
@@ -249,7 +249,7 @@ textarea::placeholder {
         width: 87%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 4vh;
+        margin-top: 10vh;
         font-size: 1.25em;
     }
     .first-section-img {
@@ -452,28 +452,35 @@ textarea::placeholder {
     .first-section {
         justify-content: flex-start;
     }
+    .first-section-h2 {
+        display: flex;
+        margin-left: 4%;
+    }
     .mobile-position-change {
         max-height: 85vh;
-        margin-top: 5vh;
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-end;
+        margin-bottom: 0;
     }
     .first-section-h2 {
-        margin-top: 4vh;
-        margin-left: -8vw;
+        margin-top: 5vh;
+        margin-left: 4%;
+        margin-bottom: 2%;
     }
     .first-section-img {
-        margin-top: 4vh;
+        margin-top: 0;
         max-height: 85%;
         max-width: 100%;
         width: 60%;
     }
     .first-section-text {
         margin-top: 0;
-        margin-bottom: 6vh;
         max-width: 35.41%;
-        font-size: 1.3em;
+        font-size: 1.56vw;
+    }
+    .color-line {
+        margin-top: 30px;
     }
     .second-section-heading {
         font-size: 2.5em;

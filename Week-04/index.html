@@ -13,39 +13,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="flex-container">
-        <aside class="flex-container sidebar hide-mobile">
+        <aside class="flex-container hide-mobile sidebar">
+            <img src="img/sidebar-icon.png" class="hide-desktop sidebar-mobile-icon">
             <img src="img/logo-radium-1.png" alt="Radium Rocket Logo" class="sidebar-logo">
-            <nav class="flex-container nav-container">
+            <nav class="flex-container cursor-style nav-container">
                 <ul class="flex-container buttons-container">
-                    <li class="sidebar-list"><a href="#" id="button-home">HOME</a></li>
-                    <li class="sidebar-list"><a href="">SIGN UP</a></li>
-                    <li class="sidebar-list"><a href="">LOG IN</a></li>
-                    <li class="sidebar-list contact-button"><a href="">CONTACT</a></li>
+                    <li class="sidebar-nav-list home-button flex-container"><a href="#">home</a></li>
+                    <li class="sidebar-nav-list flex-container"><a href="">sign up</a></li>
+                    <li class="sidebar-nav-list flex-container"><a href="">log in</a></li>
+                    <li class="sidebar-nav-list contact-button flex-container"><a href="#contact">contact</a></li>
                 </ul>
                 <h2 class="sidebar-h2">other options</h2>
                 <ul class="flex-container other-options-list">
-                    <li><a href="#howCanWeHelpYou">How can we help you?</a></li>
-                    <li><a href="#ourHistory">Our history</a></li>
-                    <li><a href="#activities">Activities</a></li>
+                    <li class="other-options-distance"><a href="#howCanWeHelpYou">How can we help you?</a></li>
+                    <li class="other-options-distance"><a href="#ourHistory">Our history</a></li>
+                    <li class="other-options-distance"><a href="#activities">Activities</a></li>
                 </ul>
             </nav>
-            <ul>
-                <li class="mail-maps-list">
-                    <a href="mailto:Info@Rocket.com"><img src="img/icon-contact.png" alt="envelope icon">
-                    Info@Rocket.com</a>
+            <ul class="mail-maps-list cursor-style flex-container">
+                <li class="mail-maps-list-item flex-container">
+                    <img src="img/icon-contact.png" alt="envelope icon" class="mail-maps-list-icons">
+                    <a href="mailto:Info@Rocket.com">Info@Rocket.com</a>
                 </li>
-                <li class="mail-maps-list">
+                <li class="mail-maps-list-item flex-container">
+                    <img src="img/icon-home.png" alt="home icon" class="mail-maps-list-icons">
                     <a href="https://www.google.com/maps/place/Rosario,+Santa+Fe/@-32.9520457,-60.76668,12z/data=!3m1!4
                     b1!4m6!3m5!1s0x95b6539335d7d75b:0xec4086e90258a557!8m2!3d-32.9587022!4d-60.6930416!16zL20vMDJ0YjE3?
-                    authuser=0" target="_blank"><img src="img/icon-home.png" alt="home icon">Rosario, Argentina.</a>
+                    authuser=0" target="_blank">Rosario, Argentina.</a>
                 </li>
-                <li class="mail-maps-list">
-                     <a href="tel:000000000" target="_blank"><img src="img/icon-whatsapp.png" alt="whatsapp icon">(000)
+                <li class="mail-maps-list-item flex-container">
+                    <img src="img/icon-whatsapp.png" alt="whatsapp icon" class="mail-maps-list-icons size-fix-icon">
+                     <a href="tel:000000000" target="_blank">(000)
                      000-000</a>
                 </li>
             </ul>
+            <span class="hide-desktop sidebar-megasa">megarocket s.a</span>
+            <div class="social-media-sidebar cursor-style flex-container">
+                <a href="mailto:Info@Rocket.com" target="_blank"><img src="img/icon-gmail.png" alt="Gmail logo"  id="gmail-icon" class="img-social-media"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/icon-facebook.png" alt="Facebook logo" class="img-social-media"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="img/icon-instagram.png" alt="Instagram logo" class="img-social-media"></a>
+            </div>
         </aside>
-        <div class="flex-container display-header-main-footer">
+        <div class="flex-container sidebar-test display-header-main-footer">
             <header class="flex-container header-footer-style">
                 <img src="img/sidebar-icon.png" class="hide-desktop">
                 <img src="img/logo-radium-2.png" alt="Radium Rocket name" class="hide-mobile logo-header">
