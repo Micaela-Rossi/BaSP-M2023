@@ -17,7 +17,8 @@ var months2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "
 console.log(months2);
 months2.unshift("First");
 months2.push("Last");
-console.log(months2);
+var resultC = months2;
+console.log(resultC);
 //d. Quitar un elemento del principio y del final del array (utilizar shift y pop).
 console.log('------------EXERCISE 3.d------------');
 var months3 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
@@ -25,13 +26,15 @@ var months3 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "
 console.log(months3);
 months3.shift("Enero");
 months3.pop("Diciembre");
-console.log(months3);
+var resultD = months3;
+console.log(resultD);
 //e. Invertir el orden del array (utilizar reverse).
 console.log('------------EXERCISE 3.e------------');
 var months4 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
 "Octubre", "Noviembre", "Diciembre"];
 console.log(months4);
-console.log(months4.reverse());
+var resultE = months4.reverse();
+console.log(resultE);
 //f. Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
 console.log('------------EXERCISE 3.f------------');
 var months5 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
