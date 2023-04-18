@@ -25,7 +25,7 @@ Resolutions:
 
 ## Week 05
 Creation of a new index to complete exercises of javascript.
-
+[JavaScript Exercises](https://micaela-rossi.github.io/BaSP-M2023/Week-05/)
 Some exercises have an extra console.log(), to show the before and after the resolution. If both have the same content, refresh the page.
 Some corrections was made in the files of Week-04.
 
