@@ -1,4 +1,4 @@
-@import url('https: //fonts.googleapis.com/css2?family=Open+Sans&family=Roboto: wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto: wght@300;400&display=swap');
 body {
     font-family: 'Roboto', Arial, Helvetica;
     color: #373867;
@@ -24,18 +24,11 @@ a {
 h1, h2 {
     text-transform: uppercase;
 }
-.section-space {
-    width: 100vw;
-    height: 100vh;
-}
-#section-small-first {
-    height: 89.6vh;
-}
 .color-line {
     display: none;
 }
 ::placeholder {
-    padding-left: 4vw;
+    padding-left: 10px;
     font-family: 'Roboto';
     text-emphasis: none;
     font-style: normal;
@@ -57,9 +50,6 @@ input[type="radio"]:checked {
     border: 3px solid #373867;
 }
 @media screen and (min-width: 481px) {
-    .section-space {
-        width: 78vw;
-    }
     .color-line {
         display: block;
         margin: auto;
@@ -81,16 +71,13 @@ input[type="radio"]:checked {
 @media screen and (min-width: 769px) {
 }
 @media screen and (min-width: 1025px) {
-    .section-space {
-        width: 80vw;
-    }
     .color-line {
         width: 80%;
         height: 0.75vh;
         margin: 15px auto;
     }
     #section-small-first {
-        height: fit-content
+        height: fit-content;
     }
     .display-header-main-footer {
         width: 80vw;

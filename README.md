@@ -23,5 +23,11 @@ Resolutions:
     Tablet breakpoint to be more acurate to figma: from 769 to 1024
     Desktop: from 1025
 
+## Week 05
+Creation of a new index to complete exercises of javascript.
+
+Some exercises have an extra console.log(), to show the before and after the resolution. If both have the same content, refresh the page.
+Some corrections was made in the files of Week-04.
+
 ## Author
 Micaela A. Rossi
