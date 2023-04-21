@@ -1,0 +1,141 @@
+.body-elements-positions {
+    justify-content: space-around;
+    align-items: center;
+}
+.return-arrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 29px;
+    margin: 15px;
+}
+.logo-radium-form {
+    width: 134px;
+}
+.form-side {
+    align-items: center;
+    flex-direction: column;
+}
+.label-distribution {
+    align-items: center;
+    flex-direction: column;
+}
+.form-elements {
+    margin: 15px 0;
+}
+.user-password-container {
+    flex-direction: column;
+}
+.user-password-fields {
+    align-items: center;
+    flex-direction: column;
+}
+.user-password-img {
+    height: 20px;
+    align-self: flex-end;
+}
+form label {
+    font-size: 0.75em;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.user-fields {
+    margin: 8px 0;
+}
+.password-field {
+    margin: 8px 0;
+}
+.keep-me-forget-pass {
+    align-items: center;
+}
+.keep-me-signed-text {
+    line-height: 25px;
+}
+#password-recovery-link {
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #011AF9;
+    font-size: 0.75em;
+}
+.login-button {
+    width:115px;
+    height: 40px;
+    background: rgba(54, 54, 54, 0.26);
+    border: 1px solid #373867;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    line-height: 35px;
+}
+#signup-redirect {
+    width:207px;
+    height: 29px;
+    background: #373867;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+}
+@media screen and (min-width: 769px) {
+    .form-side {
+        justify-content: center;
+        width: 50vw;
+        height: 100vh;
+    }
+    .return-arrow {
+        width: 40px;
+        margin: 30px 40px;
+    }
+    .logo-radium-form {
+        width: 230px;
+    }
+    .form-elements {
+        margin: 18px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .desktop-image {
+        align-items: flex-end;
+        width: 50vw;
+        height: 100vh;
+        background-color: #AACE9B;
+        background-image: url(../img/login-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .radium-desktop-logo {
+        width: 496px;
+        height: 90px;
+        margin-left: 15px;
+    }
+    .form-side {
+        width: 50vw;
+    }
+    .logo-radium-form {
+        width: 340px;
+    }
+    .user-fields {
+        margin: 15px 0;
+    }
+    .password-field {
+        margin: 15px 0;
+    }
+    .login-button {
+        width: 164px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #signup-redirect {
+        width: 229px;
+        height: 36px;
+        line-height: 40px;
+    }
+    .input-space {
+        margin: 5px;
+    }
+}
