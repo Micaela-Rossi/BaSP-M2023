@@ -32,6 +32,7 @@
 }
 .user-password-img {
     height: 20px;
+    margin: 0 5px;
     align-self: flex-end;
 }
 form label {
@@ -58,14 +59,15 @@ form label {
     color: #011AF9;
     font-size: 0.75em;
 }
-.login-button {
+#login-button {
     width:115px;
     height: 40px;
     background: rgba(54, 54, 54, 0.26);
     border: 1px solid #373867;
     border-radius: 5px;
     text-transform: uppercase;
-    font-weight: 700;
+    color: #373867;
+    font-weight: 800;
     text-align: center;
     line-height: 35px;
 }
@@ -80,6 +82,32 @@ form label {
     font-weight: 700;
     text-align: center;
     line-height: 30px;
+}
+.invalid-values-texts {
+    margin: 5px;
+    color: #ed544c;
+}
+.valid-field {
+    background-color: #7eed9b;
+}
+.invalid-field {
+    background-color: #ed544c;
+}
+#error-email {
+    margin-left: 25px;
+    width: 177px;
+    font-size: 0.75em;
+    text-align: center;
+    font-weight: 700;
+    color: #ed544c;
+}
+#error-password {
+    margin-left: 25px;
+    width: 177px;
+    font-size: 0.75em;
+    text-align: center;
+    font-weight: 700;
+    color: #ed544c;
 }
 @media screen and (min-width: 769px) {
     .form-side {
@@ -125,7 +153,7 @@ form label {
     .password-field {
         margin: 15px 0;
     }
-    .login-button {
+    #login-button {
         width: 164px;
         height: 50px;
         line-height: 50px;
