@@ -83,10 +83,6 @@ form label {
     text-align: center;
     line-height: 30px;
 }
-.invalid-values-texts {
-    margin: 5px;
-    color: #ed544c;
-}
 .valid-field {
     background-color: #7eed9b;
 }

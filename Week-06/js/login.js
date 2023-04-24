@@ -33,7 +33,7 @@ passwordInput.addEventListener('blur', function(){
     if (passwordInput.value != ''){
         if (passwordInput.value.length > 7){
             passwordInput.classList.add('valid-field');
-            if (passwordInput.value.search(/[a-zA-Z]/) == -1 || passwordInput.value.search(/[0-9]/) === -1) {
+            if (/^(?=.*\d)(?=.*[a-zA-Z])/.test(passwordInput.value)){
                 passwordInput.classList.add('valid-field');
             }else {
                 passwordInput.classList.add('invalid-field');
@@ -56,19 +56,48 @@ passwordInput.addEventListener('focus', function () {
       passwordInput.classList.remove("invalid-field", "valid-field");
       passwordError.innerText='';
 });
-/*
+
 function isPasswordValid (passwordErrorText){
-    return passwordErrorText !== 'The password field is required' &&
-    passwordErrorText !== 'The password must contain at least 8 characters' &&
-    passwordErrorText !== 'The password must contain at least 1 number and 1 letter';
+    if (passwordErrorText == 'The password field is required' ||
+    passwordErrorText == 'The password must contain at least 8 characters' ||
+    passwordErrorText == 'The password must contain at least 1 number and 1 letter'){
+        return false;
+    }else {
+        return true;
+    }
 }
 
 function isEmailValid (emailErrorText) {
-    return emailErrorText !== 'Please complete with a valid email' &&
-    emailErrorText !== 'The email field is required';
+    if (emailErrorText == 'Please complete with a valid email' ||
+    emailErrorText == 'The email field is required'){
+        return false;
+    }else {
+        return true;
+    }
 
 }
 
-/*logInButton.addEventListener('click', function(){
-    if (isPasswordValid = false)
-} )*/
+function checkInputs (isPasswordValid, isEmailValid){
+    if (isPasswordValid && isEmailValid) {
+    alert('Log in success!');
+  } else if (isPasswordValid && !isEmailValid) {
+    alert('The email has an error');
+    return;
+  } else if (!isPasswordValid && isEmailValid) {
+    alert('The password has an error');
+    return;
+  } else {
+    alert('The email and the password has an error');
+  }
+}
+
+logInButton.addEventListener('click', function(event){
+    event.preventDefault();
+
+    if (checkInputs(isPasswordValid, isEmailValid)){
+        console.log('correcto envío de formulario');
+    }else {
+        console.log('no se envía el formulario');
+        return;
+    }
+})

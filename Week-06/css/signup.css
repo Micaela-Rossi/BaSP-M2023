@@ -14,19 +14,22 @@
 }
 .register-form {
     flex-direction: column;
-    flex-wrap: wrap;
 }
 .logo-radium-register {
     width: 125px;
     margin-top: 7%;
 }
-input[type="text"][type="date"] {
+.only-inputs {
+    flex-direction: column;
+}
+.only-inputs input {
+    margin: 4px 0;
     border: 1px solid #373867;
     border-radius: 4px;
 }
 .register-label {
     margin: 5px 0;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.7em;
 }
 .terms-conditions {
@@ -48,6 +51,19 @@ input[type="text"][type="date"] {
     font-size: 0.75em;
     font-weight: 700;
     text-decoration: underline;
+}
+.valid-field {
+    background-color: #7eed9b;
+}
+.invalid-field {
+    background-color: #ed544c;
+}
+.text-error {
+    width: 175px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #ed544c;
 }
 @media screen and (min-width: 1025px) {
     .return-arrow {
@@ -73,10 +89,14 @@ input[type="text"][type="date"] {
         justify-content: space-around;
     }
     .only-inputs {
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 270px;
     }
-    .desktop-display-columns {
-        flex-direction: column;
-        height:fit-content;
+    .register-label {
+        margin: 2px 40px;
+    }
+    .only-inputs input {
+        margin: 5px 40px;
     }
 }
