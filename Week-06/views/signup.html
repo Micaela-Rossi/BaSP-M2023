@@ -16,68 +16,78 @@
             <img src="../img/Logo-Radium-Login.png" class="logo-radium-register">
             <form class="register-form flex-container">
                 <div class="only-inputs flex-container">
-                    <div class="desktop-display-inputs flex-container"><label for="name" class="register-label">Name</label>
-                        <input type="text" id="name" class="" placeholder="First Name">
+                    <div class="desktop-display-inputs flex-container">
+                        <label for="name" class="register-label">Name</label>
+                        <input type="text" name="name" id="name" class="inputs-fields" placeholder="First Name">
                         <p class="text-error" id="name-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="surname" class="register-label">Surname</label>
-                        <input type="text" id="surname" class="" placeholder="Surname">
+                        <input type="text" name="surname" id="surname" class="inputs-fields" placeholder="Surname">
                         <p class="text-error"  id="surname-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="dni" class="register-label">D.N.I</label>
-                        <input type="text" id="dni" class="" placeholder="99.999.999">
+                        <input type="text" name="dni" id="dni" class="inputs-fields" placeholder="99.999.999">
                         <p class="text-error"  id="dni-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="date-of-birth" class="register-label">Date Of Birth</label>
-                        <input type="date" id="date-of-birth" class="" placeholder="dd/mm/yyyy">
+                        <input type="text" name="date-of-birth" id="date-of-birth"
+                        class="inputs-fields" placeholder="dd/mm/yyyy">
                         <p class="text-error"  id="date-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="phone" class="register-label">Phone Number</label>
-                        <input type="text" id="phone" class="" placeholder="0341 0000000">
+                        <input type="text" name="phone" id="phone" class="inputs-fields" placeholder="0341 0000000">
                         <p class="text-error"  id="phone-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="phone-second" class="register-label">Another Phone Number</label>
-                        <input type="text" id="phone-second" class="" placeholder="0341 0000000">
+                        <input type="text" name="phone-second" id="phone-second" class="inputs-fields"
+                        placeholder="3410000000">
                         <p class="text-error"  id="phone-second-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="adress" class="register-label">Adress</label>
-                        <input type="text" id="adress" class="" placeholder="ExampleStreet 123">
+                        <input type="text" name="adress" id="adress" class="inputs-fields"
+                        placeholder="ExampleStreet 123">
                         <p class="text-error"  id="adress-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="city" class="register-label">City</label>
-                        <input type="text" id="city" class="" placeholder="YourCity">
+                        <input type="text" name="city" id="city" class="inputs-fields" placeholder="YourCity">
                         <p class="text-error"  id="city-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="postal-code" class="register-label">Postal Code</label>
-                        <input type="text" id="postal-code" class="" placeholder="2000">
+                        <input type="text" name="postal-code" id="postal-code" class="inputs-fields"
+                        placeholder="2000">
                         <p class="text-error"  id="postal-code-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="email" class="register-label">Email</label>
-                        <input type="text" id="email" class="" placeholder="youremail@example.com">
+                        <input type="text" name="email" id="email" class="inputs-fields"
+                        placeholder="youremail@example.com">
                         <p class="text-error"  id="email-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="register-password" class="register-label">Password</label>
-                        <input type="text" id="register-password" class="" placeholder="********">
+                        <input type="text" name="register-password" id="register-password"
+                        class="inputs-fields" placeholder="********">
                         <p class="text-error"  id="register-password-error"></p>
                     </div>
                     <div class="desktop-display-inputs flex-container">
                         <label for="repeat-register-password" class="register-label">Repeat Password</label>
-                        <input type="text" id="repeat-register-password" class="" placeholder="********">
+                        <input type="text" name="repeat-register-password" id="repeat-register-password"
+                        class="inputs-fields" placeholder="********">
                         <p class="text-error"  id="repeat-register-password-error"></p>
                     </div>
                 </div>
-                <label for="accept-conditions" class="register-label terms-conditions">Accept terms and conditions?<input type="checkbox" id="accept-conditions"></label>
-                <input type="submit" value="Register" class="register-button">
+                <label for="accept-conditions" class="register-label terms-conditions">
+                    Accept terms and conditions?<input type="checkbox" id="accept-conditions"></label>
+                <input type="submit" value="Register" class="register-button-style" id="register-button">
+                <p class="text-error" id="submit-error"></p>
             </form>
             <a href="login.html" class="to-login-link">Already have an account? Log in</a>
         </div>

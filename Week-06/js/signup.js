@@ -25,7 +25,9 @@ window.onload = function(){
     var registerPasswordRepeatField = document.getElementById('repeat-register-password');
     var passwordRepeatError = document.getElementById('repeat-register-password-error');
     var registerAcceptConditionsCheckbox = document.getElementById('accept-conditions');
-    var registerButton = document.getElementsByClassName('register-button');
+    var areInputsValid = document.getElementsByClassName('inputs-fields');
+    var registerButton = document.getElementById('register-button');
+    var submitError = document.getElementById('submit-error');
 
     registerNameField.addEventListener('blur', function(){
         if(registerNameField.value != ''){
@@ -56,12 +58,12 @@ window.onload = function(){
             nameError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerNameField.addEventListener('focus',function(){
         registerNameField.classList.remove('invalid-field', 'valid-field');
         nameError.innerText='';
-    })
+    });
 
     registerSurnameField.addEventListener('blur', function(){
         if(registerSurnameField.value != ''){
@@ -92,12 +94,12 @@ window.onload = function(){
             surnameError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerSurnameField.addEventListener('focus',function(){
         registerSurnameField.classList.remove('invalid-field', 'valid-field');
         surnameError.innerText='';
-    })
+    });
 
     registerDniField.addEventListener('blur', function(){
         if(registerDniField.value != ''){
@@ -119,15 +121,60 @@ window.onload = function(){
             dniError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerDniField.addEventListener('focus',function(){
         registerDniField.classList.remove('invalid-field', 'valid-field');
         dniError.innerText='';
-    })
+    });
 
-    //Generar validación de fechas
+    registerDateBirthField.addEventListener('blur', function(){
+        var now = new Date();
+        if (registerDateBirthField.value != ''){
+            if (registerDateBirthField.value.length == 10 && registerDateBirthField.value[2]
+                == '/' && registerDateBirthField.value[5] == '/'){
+                var day = parseInt(registerDateBirthField.value.substr(0, 2), 10);
+                var month = parseInt(registerDateBirthField.value.substr(3, 2), 10) - 1;
+                var year = parseInt(registerDateBirthField.value.substr(6, 4), 10);
+                var age = now.getFullYear() - year;
+                var monthDiff = now.getMonth() - month;
+                if (day <= 31 && month <= 12 && year >= 1963){
+                    if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < day)) {
+                        age--;
+                        if (age > 18){
+                            if (new Date(year, month, day) < now) {
+                                registerDateBirthField.classList.add('valid-field');
+                            }else {
+                                registerDateBirthField.classList.add('invalid-field');
+                                dateError.innerText = 'The date can\'t be after today';
+                                return;
+                            }
+                        }else{
+                            registerDateBirthField.classList.add('invalid-field');
+                            dateError.innerText = 'you must be over 18 years old';
+                            return;
+                        }
+                    }
+                }else {
+                    registerDateBirthField.classList.add('invalid-field');
+                    dateError.innerText = 'Please put a valid date';
+                }
+            }else {
+                registerDateBirthField.classList.add('invalid-field');
+                dateError.innerText = 'The correct format is dd/mm/yyyy';
+                return;
+            }
+        }else {
+            registerDateBirthField.classList.add('invalid-field');
+            dateError.innerText = 'This field is required';
+            return;
+        }
+    });
 
+    registerDateBirthField.addEventListener('focus', function(){
+        registerDateBirthField.classList.remove('valid-field', 'invalid-field');
+        dateError.innerText = '';
+    });
 
     registerPhoneNumberField.addEventListener('blur', function(){
         if(registerPhoneNumberField.value != ''){
@@ -149,12 +196,12 @@ window.onload = function(){
             phoneError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerPhoneNumberField.addEventListener('focus',function(){
         registerPhoneNumberField.classList.remove('invalid-field', 'valid-field');
         phoneError.innerText='';
-    })
+    });
 
     registerPhoneNumberSecondField.addEventListener('blur', function(){
         if(registerPhoneNumberSecondField.value != ''){
@@ -175,27 +222,21 @@ window.onload = function(){
             registerPhoneNumberSecondField.classList.remove('invalid-field');
             phoneSecondError.innerText = '';
         }
-    })
+    });
 
     registerPhoneNumberSecondField.addEventListener('focus',function(){
         registerPhoneNumberSecondField.classList.remove('invalid-field', 'valid-field');
         phoneSecondError.innerText='';
-    })
-//revisar
+    });
+
     registerAdressField.addEventListener('blur', function (){
-        if (registerAdressField.value != ''){
-            registerAdressField.value.trim();
-            if (registerAdressField.value.length > 5) {
-                var parts = registerAdressField.value.split(' ');
-                if (parts.length >= 3) {
-                    var part;
-                    for (var i = 0; i < 3; i++) {
-                        var part = parts[i];
-                        var hasLetter = false;
-                        var hasNumber = false;
-                    }
-                    for (var i2 = 0; i2 < part.length; i2++) {
-                        var isAscii = part.charCodeAt(i2);
+        if (registerAdressField.value.trim() != ''){
+            if (registerAdressField.value.length > 4) {
+                if (registerAdressField.value.trim().indexOf(' ') !== -1){
+                    var hasLetter = false;
+                    var hasNumber = false;
+                    for (var i2 = 0; i2 < registerAdressField.value.length; i2++) {
+                        var isAscii = registerAdressField.value.charCodeAt(i2);
                         if ((isAscii >= 65 && isAscii <= 90) || (isAscii >= 97 && isAscii <= 122)) {
                             hasLetter = true;
                         } else if (isAscii >= 48 && isAscii <= 57) {
@@ -222,12 +263,12 @@ window.onload = function(){
             adressError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerAdressField.addEventListener('focus', function(){
         registerAdressField.classList.remove('invalid-field', 'valid-field');
         adressError.innerText = '';
-    })
+    });
 
     registerCityField.addEventListener('blur', function(){
         if(registerCityField.value != ''){
@@ -243,12 +284,12 @@ window.onload = function(){
             cityError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerCityField.addEventListener('focus', function(){
         registerCityField.classList.remove('valid-field', 'invalid-field');
         cityError.innerText = '';
-    })
+    });
 
     registerPostalCodeField.addEventListener('blur', function(){
         if(registerPostalCodeField.value != ''){
@@ -270,16 +311,16 @@ window.onload = function(){
             postalCodeError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerPostalCodeField.addEventListener('focus',function(){
         registerPostalCodeField.classList.remove('invalid-field', 'valid-field');
         postalCodeError.innerText='';
-    })
+    });
 
     registerEmailField.addEventListener('blur', function(){
         var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.+-]+\.com$/;
-        if (registerEmailField.value != ''){
+        if (registerEmailField.value !== ''){
             if (emailRegex.test(registerEmailField.value)) {
                 registerEmailField.classList.add('valid-field');
             }else {
@@ -356,10 +397,27 @@ window.onload = function(){
             passwordRepeatError.innerText = 'This field is required';
             return;
         }
-    })
+    });
 
     registerPasswordRepeatField.addEventListener('focus', function(){
         registerPasswordRepeatField.classList.remove('invalid-field', 'valid-field');
         passwordRepeatError.innerText = '';
-    })
+    });
+
+    registerButton.addEventListener('click', function(event){
+        if(registerAcceptConditionsCheckbox.checked){
+            var areAllFieldsValid = areInputsValid.every(function(field) {
+            return !field.classList.contains('invalid-field');
+            });
+            if(areAllFieldsValid){
+            alert('Submit success!!');
+            }else {
+                alert('Please correct the invalids fields');
+                event.preventDefault();
+            }
+        }else {
+            submitError.innerText = 'Please accept therms and condition to finish the register';
+            event.preventDefault();
+        }
+    });
 }

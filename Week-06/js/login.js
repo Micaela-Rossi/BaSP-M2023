@@ -89,5 +89,5 @@ window.onload = function(){
             alert('Log in error!! \nPlease check the email and password fields.');
             return;
           }
-    })
+    });
 }

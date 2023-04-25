@@ -11,11 +11,15 @@ Creation of the HTML of the landing page.
 ## Week 03
 Creation of the css for the landing page according to the html and the figma.
 [CSS Pixel Perfect Page](https://micaela-rossi.github.io/BaSP-M2023/Week-03/)
+
+
 To see it correctly the resolution is 1215 x 982.
 
 ## Week 04
 Creation of the css for the landing page with flexbox and media queries to make it responsive.
 [CSS Responsive Page](https://micaela-rossi.github.io/BaSP-M2023/Week-04/)
+
+
 To see correctly the mobile sidebar it's necessary change the values in styles.css, line 16 from "display: none;" to "display: flex;" and line 19 from "display: flex;" to "display: none;"
 Resolutions:
     Mobile: from 320 to 480
@@ -26,8 +30,15 @@ Resolutions:
 ## Week 05
 Creation of a new index to complete exercises of javascript.
 [JavaScript Exercises](https://micaela-rossi.github.io/BaSP-M2023/Week-05/)
+
+
 Some exercises have an extra console.log(), to show the before and after the resolution. If both have the same content, refresh the page.
 Some corrections was made in the files of Week-04.
 
+## Week 06
+Creation of pages for [log in](https://micaela-rossi.github.io/BaSP-M2023/Week-06/views/login.html) and [sign up](https://micaela-rossi.github.io/BaSP-M2023/Week-06/views/signup.html), with the html and css for each one, and linked these pages to the [landing page](https://micaela-rossi.github.io/BaSP-M2023/Week-06/views/index.html) created in the week 05. Creation of the JavaScript necesary for validate the forms in both pages (log in and sign up).
+
+
+Creation of the requirements file to corroborate the validations.
 ## Author
 Micaela A. Rossi
