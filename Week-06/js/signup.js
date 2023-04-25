@@ -207,7 +207,13 @@ window.onload = function(){
         if(registerPhoneNumberSecondField.value != ''){
             if(!isNaN(registerPhoneNumberSecondField.value)){
                 if(registerPhoneNumberSecondField.value.length === 10){
-                registerPhoneNumberSecondField.classList.add('valid-field');
+                    if(registerPhoneNumberSecondField.value != registerPhoneNumberField.value){
+                        registerPhoneNumberSecondField.classList.add('valid-field');
+                    }else {
+                        registerPhoneNumberSecondField.classList.add('invalid-field');
+                        phoneSecondError.innerText = 'This phone number must be different from the first';
+                        return;
+                    }
                 }else {
                     registerPhoneNumberSecondField.classList.add('invalid-field');
                     phoneSecondError.innerText = 'The phone number must have 10 characters';
@@ -219,8 +225,8 @@ window.onload = function(){
                 return;
             }
         }else{
-            registerPhoneNumberSecondField.classList.remove('invalid-field');
-            phoneSecondError.innerText = '';
+            registerPhoneNumberSecondField.classList.add('invalid-field');
+            phoneSecondError.innerText = 'This field is required';
         }
     });
 
@@ -404,19 +410,34 @@ window.onload = function(){
         passwordRepeatError.innerText = '';
     });
 
+    var isValid = true;
+
+    for (var i = 0; i < areInputsValid.length; i++) {
+        if ( areInputsValid[i].value === '' || !areInputsValid[i].classList.contains('valid-field')) {
+            isValid = false;
+            break;
+        }
+    }
+
     registerButton.addEventListener('click', function(event){
         if(registerAcceptConditionsCheckbox.checked){
-            var areAllFieldsValid = areInputsValid.every(function(field) {
-            return !field.classList.contains('invalid-field');
-            });
-            if(areAllFieldsValid){
-            alert('Submit success!!');
+            if(isValid){
+                alert('Register Success!! \nName: ' + registerNameField.value +
+                '\nSurname: ' + registerSurnameField.value +
+                '\nD.N.I: ' + registerDniField.value +
+                '\nDate of birth: ' + registerDateBirthField.value +
+                '\nPhone Number: ' + registerPhoneNumberField.value +
+                '\nAdress: ' + registerAdressField.value +
+                '\nCity: ' + registerCityField.value +
+                '\nPostal Code: ' + registerPostalCodeField.value +
+                '\nEmail: ' + registerEmailField.value +
+                '\nPassword: ' +registerPasswordField.value);
             }else {
-                alert('Please correct the invalids fields');
+                alert('Register failed! \nPlease check the fields are all complete and without errors');
                 event.preventDefault();
             }
         }else {
-            submitError.innerText = 'Please accept therms and condition to finish the register';
+            submitError.innerText = 'Please accept terms and condition to finish the register';
             event.preventDefault();
         }
     });

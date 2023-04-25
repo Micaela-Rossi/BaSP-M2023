@@ -21,6 +21,8 @@
 }
 .only-inputs {
     flex-direction: column;
+    width: 60vw;
+    align-self: center;
 }
 .only-inputs input {
     margin: 4px 0;
@@ -71,7 +73,13 @@
     flex-direction: column;
 }
 #submit-error {
+    margin-left: 177px;
     font-size: 0.75em;
+}
+@media screen and (min-width: 769px) {
+    .only-inputs {
+        width: 40vw;
+    }
 }
 @media screen and (min-width: 1025px) {
     .return-arrow {
