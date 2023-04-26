@@ -134,11 +134,16 @@ window.onload = function(){
             if (registerDateBirthField.value.length == 10 && registerDateBirthField.value[2]
                 == '/' && registerDateBirthField.value[5] == '/'){
                 var day = parseInt(registerDateBirthField.value.substr(0, 2), 10);
-                var month = parseInt(registerDateBirthField.value.substr(3, 2), 10) - 1;
-                var year = parseInt(registerDateBirthField.value.substr(6, 4), 10);
-                var age = now.getFullYear() - year;
-                var monthDiff = now.getMonth() - month;
-                if (day <= 31 && month <= 12 && year >= 1963){
+                var month = parseInt(registerDateBirthField.value.substr(3, 5), 10);
+                var year = parseInt(registerDateBirthField.value.substr(6, 10), 10);
+                console.log('dia ' + day);
+                console.log('mes ' + month);
+                console.log('año ' + year);
+                console.log("ASD ms", new Date(registerDateBirthField.value),new Date(registerDateBirthField.value).getTime())
+                console.log("ASD ago2 ms", new Date(`${now.getFullYear()-18}/${now.getMonth()}/${now.getDay()}`).getTime())
+              
+
+                /*if (day <= 31 && month <= 12 && year > 1963){
                     if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < day)) {
                         age--;
                         if (age > 18){
@@ -158,7 +163,7 @@ window.onload = function(){
                 }else {
                     registerDateBirthField.classList.add('invalid-field');
                     dateError.innerText = 'Please put a valid date';
-                }
+                }*/
             }else {
                 registerDateBirthField.classList.add('invalid-field');
                 dateError.innerText = 'The correct format is dd/mm/yyyy';
