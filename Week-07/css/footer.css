@@ -1,0 +1,48 @@
+.footer-resize {
+    height: 57px;
+}
+.footer-text {
+    width: 80%;
+    margin-left: 2vw;
+    font-size: 0.5em;
+    color: black;
+}
+.img-links-footer {
+    width: 25px;
+    margin: 2px;
+}
+.gmail-correct-position{
+    padding-top: 4px;
+}
+@media screen and (min-width: 481px) {
+    .footer-resize {
+        height: 67px;
+    }
+    .footer-links {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .footer-resize {
+        height: 87px;
+    }
+    .footer-links {
+        width: 45%;
+    }
+    .img-links-footer {
+        width: 42px;
+        margin: 11px;
+    }
+    .gmail-correct-position{
+        padding-top: 7px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .footer-links {
+        width: 30%;
+    }
+    .footer-text {
+        font-size: 1.5vw;
+        padding-left: 5vw;
+    }
+}

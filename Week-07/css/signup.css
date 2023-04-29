@@ -1,0 +1,122 @@
+.return-arrow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 29px;
+    margin: 15px;
+}
+.signup-body {
+    justify-content: center;
+}
+.register-side {
+    flex-direction: column;
+    align-items: center;
+}
+.register-form {
+    flex-direction: column;
+}
+.logo-radium-register {
+    width: 125px;
+    margin-top: 7%;
+}
+.only-inputs {
+    flex-direction: column;
+    width: 60vw;
+    align-self: center;
+}
+.only-inputs input {
+    margin: 4px 0;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+.register-label {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+.terms-conditions {
+    text-decoration: underline;
+    color: #011AF9;
+    text-align: center;
+}
+.register-button-style {
+    align-self: center;
+    width: 135px;
+    height: 40px;
+    margin: 10px 0;
+    background-color: #AACE9B;
+    border: 1px solid #373867;
+    color: #373867;
+    font-weight: 700;
+}
+.to-login-link {
+    margin-bottom: 15px;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.valid-field {
+    background-color: #7eed9b;
+}
+.invalid-field {
+    background-color: #ed544c;
+}
+.text-error {
+    height: 32.5px;
+    width: 175px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #ed544c;
+}
+.desktop-display-inputs {
+    flex-direction: column;
+}
+#submit-error {
+    margin-left: 177px;
+    font-size: 0.75em;
+}
+@media screen and (min-width: 769px) {
+    .only-inputs {
+        width: 40vw;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .return-arrow {
+        width: 40px;
+        margin: 30px 40px;
+    }
+    .desktop-register-image {
+        align-items: flex-start;
+        width: 50vw;
+        height: 100vh;
+        background-color: #373867;
+        background-image: url(../img/signup-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .radium-desktop-logo {
+        width: 496px;
+        height: 90px;
+        margin-left: 99px;
+    }
+    .register-side {
+        width: 50vw;
+        justify-content: space-around;
+    }
+    .only-inputs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 530px;
+    }
+    .register-label {
+        margin: 2px 40px;
+    }
+    .only-inputs input {
+        margin: 0 40px;
+    }
+    .text-error {
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <title>Mega Rocket S.A | Log In</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/login.js"></script>
+  </head>
+  <body class="flex-container body-elements-positions">
+    <div class="desktop-image flex-container hide-tablet">
+      <img src="../img/logo-radium-2.png" class="radium-desktop-logo" />
+    </div>
+    <div class="form-side flex-container">
+      <a href="index.html" class="flex-container form-elements"
+        ><img src="../img/arrow-icon.png" class="return-arrow"
+      /></a>
+      <img
+        src="../img/Logo-Radium-Login.png"
+        class="logo-radium-form form-elements"
+      />
+      <form class="flex-container user-password-fields">
+        <div class="user-password-container form-elements flex-container">
+          <div class="user-field flex-container">
+            <img
+              src="../img/Logo-login-user-field.png"
+              class="user-password-img"
+            />
+            <div class="label-distribution flex-container">
+              <label for="user">User</label>
+              <input
+                type="text"
+                id="user"
+                placeholder="your email here"
+                class="input-space"
+              />
+            </div>
+          </div>
+          <p id="error-email"></p>
+          <div class="password-field flex-container">
+            <img
+              src="../img/logo-login-password-field.png"
+              class="user-password-img"
+            />
+            <div class="label-distribution flex-container">
+              <label for="password">Password</label>
+              <input
+                type="text"
+                id="password"
+                placeholder="********"
+                class="input-space"
+              />
+            </div>
+          </div>
+          <p id="error-password"></p>
+        </div>
+        <div class="keep-me-forget-pass flex-container">
+          <div class="keep-me form-elements">
+            <input type="checkbox" id="keep-me-singned" />
+            <label for="keep-me-singned" class="keep-me-signed-text"
+              >Keep me signed</label
+            >
+          </div>
+          <a href="" class="form-elements" id="password-recovery-link"
+            >Forgot password?</a
+          >
+        </div>
+        <input type="submit" value="Log In" class="form-elements" id="login-button">
+      </form>
+      <a href="signup.html" class="form-elements" id="signup-redirect"
+        >Create an account</a
+      >
+    </div>
+  </body>
+</html>

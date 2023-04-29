@@ -1,0 +1,660 @@
+.section-space {
+    width: 100vw;
+}
+#section-small-first {
+    height: 89.6vh;
+}
+.main-reason-section {
+    flex-direction: column;
+    justify-content: center;
+}
+.main-reason-section-h2 {
+    font-weight: 700;
+    margin-bottom: 1vh;
+    font-size: 1.5em;
+    text-align: center;
+}
+.main-reason-section-text {
+    width: 89vw;
+    max-height: 33vh;
+    margin-top: 2.48vh;
+    font-weight: 400;
+    font-size: 0.75em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main-reason-section-img {
+    width: 100vw;
+}
+.mobile-position-change {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.how-can-help-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../img/img-landing-2.png");
+    height: 100vh;
+    max-width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.how-can-help-section-heading {
+    margin: 7vh auto;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: #EBECF0;
+}
+.how-can-help-section-text {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6vh;
+}
+.false-button {
+    width: 58vw;
+    padding: 5%;
+    margin-bottom: 5vh;
+    background-color: #EBECF0;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.19em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.false-button-small {
+    padding-top: 9%;
+    padding-bottom: 9%;
+}
+.contact-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section-heading {
+    padding-top: 14px;
+    padding-bottom: 21px;
+    font-size: 1.87em;
+    font-weight: 700;
+}
+.contact-section-img {
+    margin-left: 4vw;
+    align-self: center;
+}
+.contact-section-form {
+    flex-direction: column;
+    padding-bottom: 5vh;
+    font-weight: 700;
+}
+.form-item {
+    margin-left: 8vw;
+    margin-top: 0.5vh;
+    margin-bottom: 2vh;
+}
+input[type=text] {
+    margin-right: 7vw;
+    margin-bottom: 2vh;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+input[type=email] {
+    margin-right: 7vw;
+    margin-bottom: 2vh;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+.form-input-text {
+    justify-content: space-between;
+    padding-bottom: 5vh;
+}
+.form-input-text-colums {
+    flex-direction: column;
+}
+.label-radio {
+    margin-left: 4vw;
+    font-size: 0.8em;
+}
+.input-radio-distribution {
+    justify-content: space-between;
+    padding-top: 3vh;
+}
+.radio-colums {
+    flex-direction: column;
+}
+.label-textarea {
+    padding-top: 3vh;
+}
+.textarea-input {
+    width: 84vw;
+    height: 17vh;
+    padding-top: 1vh;
+    resize: none;
+    border-color: #E0E0E0;
+}
+textarea::placeholder {
+    font-weight: 700;
+}
+.form-buttons {
+    flex-wrap: wrap;
+    font-family: 'Roboto';
+}
+.send-message-button {
+    width: 42vw;
+    margin-left: 1em;
+    background: #AACE9B;
+    border: 1px solid #AACE9B;
+    border-radius: 5px;
+    color: #373867;
+}
+.reset-button {
+    width: 24vw;
+    margin-left: 2em;
+    background: #FFFFFF;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    color: #373867;
+}
+.our-history-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-history-section-background {
+    max-width: 100vw;
+    height: 61vh;
+    width: auto;
+    background-image: url(../img/img-landing-3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+.our-history-section-heading {
+    font-size: 1.87em;
+    font-weight: 700;
+    margin-bottom: 10vh;
+}
+.blur {
+    backdrop-filter: blur(4px);
+}
+.our-history-section-text {
+    margin: auto 1.8em;
+    color: #FFFFFF;
+    text-align: justify;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.activities-member-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150vh;
+    font-size: 1.87em;
+    font-weight: 700;
+}
+.activities-member-section-activities {
+    flex-direction: column;
+}
+.activities-names {
+    flex-direction: column;
+}
+.activities-avaliable {
+    margin-top: 2.5vh;
+    font-size: 0.65em;
+    line-height: 6vh;
+}
+.icon-activities {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+}
+.activities-member-section-membership {
+    flex-direction: column;
+    align-items: center;
+}
+.membership-heading {
+    margin-bottom: 4vh;
+    font-size: 0.95em;
+}
+.membership-subheading {
+    margin-bottom: 2vh;
+    font-size: 1.25em;
+}
+.icon-membership {
+    max-width: 40px;
+    width: 12.5vw;
+}
+.membership-info {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.membership-info-distribution {
+    align-items: center;
+    margin-bottom: 4vh;
+    margin-left: 7vw;
+}
+.membership-info-list {
+    flex-direction: column;
+    margin-left: 5vw;
+    font-size: 45%;
+}
+.membership-info-list>li {
+    max-width: 52vw;
+}
+@media screen and (min-width: 481px) {
+    .section-space {
+        width: 78vw;
+    }
+    .main-reason-section {
+        justify-content: center;
+    }
+    .mobile-position-change {
+        margin-bottom: 15%;
+    }
+    .main-reason-section-h2 {
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+        font-size: 1.25em;
+    }
+    .main-reason-section-img {
+        max-height: 45vh;
+        max-width: 80vw;
+        width: auto;
+        margin-bottom: 3vh;
+    }
+    .main-reason-section-text {
+        width: 70vw;
+        margin-top: 5vh;
+        text-shadow: none;
+        font-weight: 600;
+        line-height: 1em;
+    }
+    .how-can-help-section-heading {
+        width: 66vw;
+        padding-top: 10vh;
+        font-size: 1.75em;
+    }
+    .how-can-help-section-text {
+        margin-bottom: 10vh;
+    }
+    .false-button {
+        width: 46vw;
+        font-size: 1.25em;
+    }
+    .false-button-small {
+        padding-top: 9.5%;
+        padding-bottom: 9.5%;
+    }
+    .contact-section-form {
+        width: 78vw;
+    }
+    .form-input-text {
+        justify-content: space-around;
+    }
+    .form-item {
+        margin-left: 0;
+    }
+    .tablet-fix {
+        margin-left: 5vw;
+    }
+    input[type=text] {
+        height: 3vh;
+        border-color: #373867;
+    }
+    input[type=email] {
+        height: 3vh;
+        border-color: #373867;
+    }
+    .labels-data {
+        margin-bottom: 3.3vh;
+    }
+    .input-radio-distribution {
+        justify-content: center;
+    }
+    .label-radio {
+        font-size: 0.9em;
+    }
+    .radio-input {
+        margin-left: 0;
+        margin-right: 2.5vw;
+    }
+    .textarea-input {
+        width: 66vw;
+        margin: auto;
+    }
+    .send-message-button {
+        width: 21vw;
+        height: 5vh;
+        margin-left: 2.4em;
+        margin-top: 3em;
+        font-size: 0.6em;
+    }
+    .reset-button {
+        width: 13vw;
+        height: 5vh;
+        margin-left: 3em;
+        margin-top: 3em;
+        font-size: 0.6em;
+    }
+    .our-history-section {
+        justify-content: flex-end;
+        height: 72vh;
+        margin-top: 0;
+    }
+    .our-history-section-background {
+        height: 50vh;
+    }
+    .activities-member-section {
+        height: 125vh;
+        margin-top: -9vh;
+    }
+    .icon-activities {
+        width: 50px;
+        height: 50px;
+    }
+    .tablet-change {
+        align-self: flex-start;
+        flex-wrap: wrap;
+        height: 250px;
+        margin-left: -13vw;
+    }
+    .activities-avaliable {
+        height: 56px;
+        margin-top: 2.5vh;
+        font-size: 0.65em;
+        line-height: 6vh;
+    }
+    .icon-membership {
+        width: 7.5vw;
+    }
+}
+@media screen and (min-width: 769px) {
+    .main-reason-section-img {
+        height: auto;
+    }
+    .main-reason-section-h2 {
+        font-size: 2em;
+    }
+    .main-reason-section-text {
+        width: 79%;
+        font-size: 1.25rem;
+    }
+    .how-can-help-section-heading {
+        width: 64vw;
+        font-size: 3em;
+    }
+    .how-can-help-section-text {
+        font-size: 1.75em;
+    }
+    .contact-section {
+        justify-content: space-between;
+    }
+    .contact-section-heading {
+        font-size: 2.5em;
+        padding-bottom: 27px;
+        padding-top: 18px;
+    }
+    .form-input-text {
+        justify-content: space-between;
+    }
+    .form-input-text-colums {
+        margin-left: 2.9em;
+    }
+    input[type=text] {
+        width: 38vw;
+        height: 4vh;
+        margin-right: 10vw;
+    }
+    input[type=email] {
+        width: 38vw;
+        height: 4vh;
+        margin-right: 10vw;
+    }
+    .labels-data {
+        margin-bottom: 5.2vh;
+    }
+    .input-radio-distribution {
+        justify-content: flex-start;
+        margin-left: 2.9em;
+    }
+    .send-message-button {
+        width: 23vw;
+        margin-left: 3.5em;
+        font-size: 0.8em;
+    }
+    .reset-button {
+        width: 15vw;
+        margin-left: 4em;
+        font-size: 0.8em;
+    }
+    .our-history-section-heading {
+        font-size: 3em;
+    }
+    .our-history-section-text {
+        font-size: 1.75em;
+    }
+    .activities-member-section-membership {
+        justify-content: space-evenly;
+    }
+    .activities-avaliable {
+        height: 81px;
+    }
+    .tablet-change {
+        height: 320px;
+    }
+    .icon-activities {
+        width: 73px;
+        height: 73px;
+    }
+    .activities-member-section h2 {
+        font-size: 1.25em;
+    }
+    .activities-member-section-activities {
+       margin-top: 4vh;
+    }
+    .membership-info-list {
+        font-size: 65%;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .section-space {
+        width: 80vw;
+    }
+    .main-reason-section {
+        justify-content: flex-start;
+    }
+    .main-reason-section-h2 {
+        margin-left: 4%;
+    }
+    .mobile-position-change {
+        max-height: 85vh;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+    .main-reason-section-h2 {
+        margin-top: 5vh;
+        margin-bottom: 2%;
+        text-align: left;
+    }
+    .main-reason-section-img {
+        margin-top: 0;
+        max-height: 85%;
+        max-width: 100%;
+        width: 60%;
+    }
+    .main-reason-section-text {
+        margin-top: 0;
+        max-width: 35.41%;
+        font-size: 1.56vw;
+    }
+    .color-line {
+        margin-top: 30px;
+    }
+    .how-can-help-section {
+        width: 75vw;
+        margin: auto;
+    }
+    .how-can-help-section-heading {
+        font-size: 2.5em;
+    }
+    .how-can-help-section-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-bottom: 0;
+        font-size: 1.25em;
+    }
+    .false-button {
+        width: 276px;
+        margin-bottom: 20vh;
+        padding: 2vh 2.5%;
+    }
+    .false-buttton-1 {
+        order: 1;
+    }
+    .false-button-agent-display {
+        order: 3;
+    }
+    .false-button-membership-management {
+        order: 2;
+    }
+    .false-button-contact-suggest {
+        order: 4;
+    }
+    .false-button-small {
+        padding-top: 3.5vh;
+        padding-bottom: 3.5vh;
+    }
+    .contact-section {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .contact-section-heading {
+        font-size: 1.6em;
+        margin-left: 2.49em;
+        margin-bottom: 1.75em;
+    }
+    .form-input-text {
+        justify-content: flex-start;
+        padding-bottom: 0;
+    }
+    .tablet-fix {
+        margin-left: 4em;
+    }
+    .form-input-text-colums {
+        margin-left: 4em;
+    }
+    input[type=text] {
+        height: 5vh;
+        width: 25vw;
+    }
+    input[type=email] {
+        height: 5vh;
+        width: 25vw;
+    }
+    .input-radio-distribution {
+        margin-left: 4em;
+    }
+    .label-radio {
+        font-size: 1em;
+    }
+    .textarea-input {
+        width: 55.5vw;
+        margin-left: 4.7em;
+    }
+    .send-message-button {
+        width: 14.6vw;
+        margin-left: 5em;
+        margin-top: 2em;
+    }
+    .reset-button {
+        width: 9.1vw;
+        margin-top: 2em;
+    }
+    .our-history-section {
+        justify-content: center;
+        height: 100vh;
+    }
+    .our-history-section-background {
+        height: 78vh;
+        width: 70vw;
+    }
+    .our-history-section-heading {
+        align-self: flex-start;
+        margin-bottom: 5vh;
+        font-size: 2em;
+        margin-left: 5vw;
+    }
+    .blur {
+        backdrop-filter: unset;
+    }
+    .our-history-section-text {
+        margin: auto 3.8em;
+    }
+    .tablet-change {
+        flex-wrap: nowrap;
+        margin-left: 0;
+        height: auto;
+    }
+    .activities-member-section {
+        flex-direction: row;
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .activities-member-section-activities {
+        align-items: flex-start;
+        width: 30vw;
+    }
+    .activities-member-section-membership {
+        align-items: center;
+        height: 760px;
+        width: 50vw;
+        margin-left: 1.5vw;
+    }
+    .activities-member-section h2 {
+        font-size: 1em;
+    }
+    .icon-activities {
+        width: 10vw;
+        height: 10vh;
+        margin-right: 5vw;
+    }
+    .activities-avaliable {
+        height: auto;
+        margin-bottom: 3%;
+        line-height: 12vh;
+        font-size: 0.45em;
+    }
+    .activities-names {
+        font-size: 1.75em;
+    }
+    .icon-membership {
+        max-width: 50px;
+        width: 3.5vw;
+    }
+    .membership-heading {
+        margin-bottom: 2vw;
+    }
+    .membership-info-distribution {
+        margin-left: 0;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    .desktop-position-fix {
+        margin-bottom: 3vh;
+    }
+    .membership-info-list {
+        font-size: 0.5em;
+        margin-left: 2.5vw;
+    }
+}
