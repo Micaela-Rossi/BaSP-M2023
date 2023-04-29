@@ -275,6 +275,7 @@ window.onload = function(){
             error: false,
             msg: 'The phone number ' + registerPhoneNumberField.value + ' is success'
         }
+    });
         registerPhoneNumberField.addEventListener('focus',function(){
             registerPhoneNumberField.classList.remove('invalid-field', 'valid-field');
             phoneError.innerText='';
@@ -659,4 +660,4 @@ window.onload = function(){
                 event.preventDefault();
             }
     });
-});}
+};
