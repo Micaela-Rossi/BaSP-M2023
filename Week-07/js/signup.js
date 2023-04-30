@@ -12,7 +12,7 @@ window.onload = function(){
     var phoneError = document.getElementById('phone-error');
     var registerPhoneNumberSecondField = document.getElementById('phone-second');
     var phoneSecondError = document.getElementById('phone-second-error');
-    var registeraddressField = document.getElementById('address');
+    var registerAddressField = document.getElementById('address');
     var addressError = document.getElementById('address-error');
     var registerCityField = document.getElementById('city');
     var cityError = document.getElementById('city-error');
@@ -54,12 +54,21 @@ window.onload = function(){
             }
             return;
         }
-        if (registerNameField.value.length < 3) {
+        if (registerNameField.value.length < 4) {
             registerNameField.classList.add('invalid-field');
-            nameError.innerText = 'Name must have at least 3 characters';
+            nameError.innerText = 'Name must have at least 4 characters';
             results[0] = {
                 error: true,
-                msg: 'Name must have at least 3 characters'
+                msg: 'Name must have at least 4 characters'
+            }
+            return;
+        }
+        if(registerNameField.value.length > 12){
+            registerNameField.classList.add('invalid-field');
+            nameError.innerText = 'Name max characters is 12';
+            results[0] = {
+                error: true,
+                msg: 'Name max characters is 12'
             }
             return;
         }
@@ -109,6 +118,15 @@ window.onload = function(){
             }
             return;
         }
+        if(registerSurnameField.value.length > 20){
+            registerSurnameField.classList.add('invalid-field');
+            surnameError.innerText = 'Surname max characters is 20';
+            results[1] = {
+                error: true,
+                msg: 'Surname max characters is 20'
+            }
+            return;
+        }
         for (let i = 0; i < registerSurnameField.value.length; i++) {
             if (parseInt(registerSurnameField.value[i])) {
                 registerSurnameField.classList.add('invalid-field');
@@ -155,12 +173,12 @@ window.onload = function(){
                 msg:'The dni only must contain numbers'
             }
         }
-        if(registerDniField.value.length < 6){
+        if(registerDniField.value.length < 7 || registerDniField.value.length > 8){
             registerDniField.classList.add('invalid-field');
-            dniError.innerText = 'The dni must have at least 7 characters';
+            dniError.innerText = 'The dni characters min is 7 and max is 8';
             results[2] = {
                 error: true,
-                msg:'The dni must have at least 7 characters'
+                msg:'The dni must have between 7 and 8 characters'
             }
             return;
         }
@@ -212,7 +230,7 @@ window.onload = function(){
             if (
                 new Date(`${year}/${month}/${day}`).getTime() <=
                 new Date(
-                    `${now.getFullYear() - 18}/${now.getMonth()}/${now.getDay()}`
+                    `${now.getFullYear() - 18}/${now.getMonth()}/${now.getDate()}`
                 ).getTime()
             ) {
                 registerDateBirthField.classList.add('valid-field');
@@ -230,6 +248,14 @@ window.onload = function(){
                 }
                 return;
             }
+        }else {
+            registerDateBirthField.classList.add('invalid-field');
+            dateError.innerText = 'please put a correct format dd/mm/yyyy';
+            results[3] ={
+                error: true,
+                msg: 'please put a correct format dd/mm/yyyy'
+            }
+            return;
         }
     });
 
@@ -338,9 +364,9 @@ window.onload = function(){
         }
     });
 
-    registeraddressField.addEventListener('blur', function (){
-        if (registeraddressField.value.trim() === ''){
-            registeraddressField.classList.add('invalid-field');
+    registerAddressField.addEventListener('blur', function (){
+        if (registerAddressField.value.trim() === ''){
+            registerAddressField.classList.add('invalid-field');
             addressError.innerText = 'This field is required';
             results[6] = {
                 error: true,
@@ -348,8 +374,8 @@ window.onload = function(){
             }
             return;
         }
-        if (registeraddressField.value.length < 4) {
-            registeraddressField.classList.add('invalid-field');
+        if (registerAddressField.value.length < 4) {
+            registerAddressField.classList.add('invalid-field');
             addressError.innerText = 'This field must have at least 5 characters.';
             results[6] = {
                 error: true,
@@ -357,43 +383,46 @@ window.onload = function(){
             }
             return;
         }
-        if (registeraddressField.value.trim().indexOf(' ') === -1){
-            registeraddressField.classList.add('invalid-field');
-            addressError.innerText = 'This field must have a space between therms.';
+        if(registerAddressField.value.length > 16){
+            registerAddressField.classList.add('invalid-field');
+            addressError.innerText = 'Address max characters is 16';
             results[6] = {
                 error: true,
-                msg: 'This field must have a space between therms.'
+                msg: 'Address max characters is 16'
             }
             return;
         }
         var hasLetter = false;
         var hasNumber = false;
-        for (var i2 = 0; i2 < registeraddressField.value.length; i2++) {
-            var isAscii = registeraddressField.value.charCodeAt(i2);
+        var hasSpace = false;
+        for (var i2 = 0; i2 < registerAddressField.value.length; i2++) {
+            var isAscii = registerAddressField.value.charCodeAt(i2);
             if ((isAscii >= 65 && isAscii <= 90) || (isAscii >= 97 && isAscii <= 122)) {
                 hasLetter = true;
             } else if (isAscii >= 48 && isAscii <= 57) {
                 hasNumber = true;
+            } else if (isAscii === 32) {
+                hasSpace = true;
             }
         }
-        if (!hasLetter && !hasNumber){
-            registeraddressField.classList.add('invalid-field');
-            addressError.innerText = 'The adrres must have numbers and letters.';
+        if (!hasLetter || !hasNumber || !hasSpace){
+            registerAddressField.classList.add('invalid-field');
+            addressError.innerText = 'The address must have letters, numbers, and at least one space.';
             results[6] = {
                 error: true,
-                msg: 'The adrres must have numbers and letters'
+                msg: 'The address must have letters, numbers, and at least one space.'
             }
             return;
         }
-        registeraddressField.classList.add('valid-field');
+        registerAddressField.classList.add('valid-field');
             results[6] = {
                 error: false,
-                msg: 'The address ' + registeraddressField.value + ' is success'
+                msg: 'The address ' + registerAddressField.value + ' is success'
             }
     });
 
-    registeraddressField.addEventListener('focus', function(){
-        registeraddressField.classList.remove('invalid-field', 'valid-field');
+    registerAddressField.addEventListener('focus', function(){
+        registerAddressField.classList.remove('invalid-field', 'valid-field');
         addressError.innerText = '';
         results[6] = {
             error: false,
@@ -646,18 +675,45 @@ window.onload = function(){
                 break;
             }
         }
-            var stringAlert = ' ';
-            for (var i=0; i < 13; i++) {
-                stringAlert += results[i].msg + '\n'
-            }
-            if (isValid) {
-                alert('submit success \n' + stringAlert);
-                event.preventDefault();
+        var stringAlert = ' ';
+        for (var i=0; i < 13; i++) {
+            stringAlert += results[i].msg + '\n'
+        }
+
+        if (isValid) {
+            var apiUrl = 'https://api-rest-server.vercel.app/signup?name='
+            + registerNameField.value + '&lastName='
+            + registerSurnameField.value
+            + '&dni=' + registerDniField.value
+            + '&dob=' + registerDateBirthField.value
+            + '&phone=' + registerPhoneNumberField.value
+            + '&address=' + registerAddressField.value
+            + '&city=' + registerCityField.value
+            + '&zip=' + registerPostalCodeField.value
+            + '&email=' + registerEmailField.value
+            + '&password=' +registerPasswordField.value;
+            window.open(apiUrl, "_blank");
+            fetch(apiUrl,{
+                method: 'GET',
+            })
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                if (data.success){
+                     alert('Succes: ' + data.msg +'\nWelcome to the Radium Rocket Gym ' + registerNameField.value)
+                }else {
+                    alert('Error: ' + data)
+                }
+            })
+            .catch(function(error){
+                 console.log(error);
+                 alert('Something goes wrong please try again');
+            });
             } else {
                 alert(
                     'Register failed! \nPlease check the fields are all complete and without errors \n' + stringAlert
                 );
-                event.preventDefault();
             }
     });
 };

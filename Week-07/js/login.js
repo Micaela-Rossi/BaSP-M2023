@@ -74,24 +74,21 @@ window.onload = function(){
     });
 
     logInButton.addEventListener('click', function(event){
+        event.preventDefault();
         if(!passwordInput.classList.contains('valid-field') && !emailInput.classList.contains('valid-field')){
-            event.preventDefault();
             alert('Log in error!! \nPlease check the email and password fields.');
             return;
         }
         if (!passwordInput.classList.contains('valid-field')) {
-            event.preventDefault();
             alert('Please check the password field.');
             return;
         }
         if (!emailInput.classList.contains('valid-field')) {
-            event.preventDefault();
             alert('Please check the email field.');
             return;
         }
         var apiUrl = 'https://api-rest-server.vercel.app/login?email=' + emailInput.value + '&password=' + passwordInput.value;
 
-        console.log(apiUrl);
         fetch(apiUrl,{
             method: 'GET',
         })
@@ -100,14 +97,14 @@ window.onload = function(){
             })
             .then(function(data){
                 if (data.success){
-                    alert('Succes: ' + data.msg)
+                    alert('Succes: ' + data.msg +'\nWelcome ' + emailInput.value)
                 }else {
                     alert('Error: ' + data)
                 }
             })
             .catch(function(error){
                 console.log(error);
-                alert('Error que sale por el catch');
+                alert('Something goes wrong');
             });
     });
 }
