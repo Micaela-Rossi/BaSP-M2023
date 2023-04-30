@@ -666,6 +666,7 @@ window.onload = function(){
     }
 
     registerButton.addEventListener('click', function (event) {
+        event.preventDefault()
         var isValid = true;
         for (var i = 0; i < 13; i++) {
             if (
@@ -682,8 +683,8 @@ window.onload = function(){
 
         if (isValid) {
             var apiUrl = 'https://api-rest-server.vercel.app/signup?name='
-            + registerNameField.value + '&lastName='
-            + registerSurnameField.value
+            + registerNameField.value
+            + '&lastName=' + registerSurnameField.value
             + '&dni=' + registerDniField.value
             + '&dob=' + registerDateBirthField.value
             + '&phone=' + registerPhoneNumberField.value
@@ -692,21 +693,18 @@ window.onload = function(){
             + '&zip=' + registerPostalCodeField.value
             + '&email=' + registerEmailField.value
             + '&password=' +registerPasswordField.value;
-            window.open(apiUrl, "_blank");
             fetch(apiUrl,{
                 method: 'GET',
             })
-            .then(function(response){
-                return response.json();
-            })
-            .then(function(data){
+            .then((response) => response.json())
+            .then((data) => {
                 if (data.success){
                      alert('Succes: ' + data.msg +'\nWelcome to the Radium Rocket Gym ' + registerNameField.value)
-                }else {
+                } else {
                     alert('Error: ' + data)
                 }
             })
-            .catch(function(error){
+            .catch((error) => {
                  console.log(error);
                  alert('Something goes wrong please try again');
             });
