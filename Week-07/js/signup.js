@@ -238,7 +238,7 @@ window.onload = function(){
                     error: false,
                     msg: 'The date ' + registerDateBirthField.value + ' is success'
                 }
-                return
+                return;
             } else {
                 registerDateBirthField.classList.add('invalid-field');
                 dateError.innerText = 'you must be over 18 years old';
@@ -681,6 +681,19 @@ window.onload = function(){
             stringAlert += results[i].msg + '\n'
         }
 
+        function saveLocalStorage() {
+            localStorage.setItem('name', registerNameField.value);
+            localStorage.setItem('lastName', registerSurnameField.value);
+            localStorage.setItem('dni', registerDniField.value);
+            localStorage.setItem('dob', registerDateBirthField.value);
+            localStorage.setItem('phone', registerPhoneNumberField.value);
+            localStorage.setItem('address', registerAddressField.value);
+            localStorage.setItem('city', registerCityField.value);
+            localStorage.setItem('zip', registerPostalCodeField.value);
+            localStorage.setItem('email', registerEmailField.value);
+            localStorage.setItem('password', registerPasswordField.value);
+        }
+
         if (isValid) {
             var apiUrl = 'https://api-rest-server.vercel.app/signup?name='
             + registerNameField.value
@@ -696,15 +709,23 @@ window.onload = function(){
             fetch(apiUrl,{
                 method: 'GET',
             })
-            .then((response) => response.json())
-            .then((data) => {
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
                 if (data.success){
-                     alert('Succes: ' + data.msg +'\nWelcome to the Radium Rocket Gym ' + registerNameField.value)
+                    alert('Success: ' + data.msg +'\nWelcome to the Radium Rocket Gym ' + registerNameField.value
+                    + '\n' + stringAlert);
+                    saveLocalStorage();
                 } else {
-                    alert('Error: ' + data)
+                    console.log(data);
+                    var errorMessage = 'Error: \n';
+                    for (var i = 0; i < data.errors.length; i++) {
+                        errorMessage += data.errors[i].msg + '\n';}
+                    alert(errorMessage);
                 }
             })
-            .catch((error) => {
+            .catch(function(error) {
                  console.log(error);
                  alert('Something goes wrong please try again');
             });

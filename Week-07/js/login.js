@@ -6,7 +6,8 @@ window.onload = function(){
     var emailError = document.getElementById('error-email');
     var passwordError = document.getElementById('error-password');
 
-    var emailValue = emailInput.value;
+    emailInput.value = localStorage.getItem('email');
+    passwordInput.value = localStorage.getItem('password');
 
     emailInput.addEventListener('blur', function(){
         var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.+-]+\.com$/;
@@ -29,8 +30,6 @@ window.onload = function(){
             emailInput.classList.remove("invalid-field", "valid-field");
             emailError.innerText='';
     });
-
-    var passwordValue = passwordInput.value;
 
     function validatePasswordNumberLetter(passwordValue) {
         var passwordHadNumber = false;
