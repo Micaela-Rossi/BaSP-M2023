@@ -734,7 +734,6 @@ window.onload = function(){
                     + '\n' + stringAlert);
                     saveLocalStorage();
                 } else {
-                    console.log(data);
                     var errorMessage = 'Error: \n';
                     for (var i = 0; i < data.errors.length; i++) {
                         errorMessage += data.errors[i].msg + '\n';}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/login.css" />
@@ -74,6 +75,26 @@
       <a href="signup.html" class="form-elements" id="signup-redirect"
         >Create an account</a
       >
+    </div>
+    <div id="modal-container-sucess">
+      <div class="modal-success">
+        <div class="modal-content-success" id="login-modal-success">
+          <span class="close-success hide-when-closed">&times;</span>
+          <p class="modal-text-success"></p>
+          <span class="close-button-success hide-when-closed">Accept</span>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <div id="modal-container-error">
+      <div class="modal-error">
+        <div class="modal-content-error" id="login-modal-error">
+          <span class="close-error hide-when-closed">&times;</span>
+          <p class="modal-text-error"></p>
+          <span class="close-button-error hide-when-closed">Accept</span>
+        </div>
+      </div>
+      <div class="overlay"></div>
     </div>
   </body>
 </html>

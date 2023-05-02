@@ -38,7 +38,11 @@ Some corrections was made in the files of Week-04.
 ## Week 06
 Creation of pages for [log in](https://micaela-rossi.github.io/BaSP-M2023/Week-06/views/login.html) and [sign up](https://micaela-rossi.github.io/BaSP-M2023/Week-06/views/signup.html), with the html and css for each one, and linked these pages to the [landing page](https://micaela-rossi.github.io/BaSP-M2023/Week-06/views/index.html) created in the week 05. Creation of the JavaScript necesary for validate the forms in both pages (log in and sign up).
 
-
 Creation of the requirements file to corroborate the validations.
+
+## Week 07
+Aplication of an API in the [log in](https://micaela-rossi.github.io/BaSP-M2023/Week-07/views/login.html) and [sign up](https://micaela-rossi.github.io/BaSP-M2023/Week-07/views/signup.html) pages to validate the inputs values of the pages created in the week 06.
+Correction based in the feedback from week 06.
+
 ## Author
 Micaela A. Rossi
