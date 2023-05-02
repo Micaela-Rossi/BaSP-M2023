@@ -449,6 +449,15 @@ window.onload = function(){
             }
             return;
         }
+        if(registerCityField.value.length > 20){
+            registerCityField.classList.add('invalid-field');
+            cityError.innerText = 'The city name max characters is 20';
+            results[7] = {
+                error: true,
+                msg: 'The city name max characters is 20'
+            }
+            return;
+        }
         registerCityField.classList.add('valid-field');
         results[7] = {
             error: false,
@@ -545,8 +554,6 @@ window.onload = function(){
             }
     });
 
-    var passwordValue = registerPasswordField.value;
-
     function validatePasswordNumberLetter(passwordValue) {
         var passwordHadNumber = false;
         var passwordHadLetter = false;
@@ -577,6 +584,15 @@ window.onload = function(){
             results[10] = {
                 error: true,
                 msg: 'The password must contain at least 8 characters'
+            }
+            return;
+        }
+        if (registerPasswordField.value.length < 15){
+            registerPasswordField.classList.add('invalid-field');
+            passwordError.innerText='The password max characters is 15';
+            results[10] = {
+                error: true,
+                msg: 'The password max characters is 15'
             }
             return;
         }

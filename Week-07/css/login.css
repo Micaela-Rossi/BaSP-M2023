@@ -47,6 +47,21 @@ form label {
 .password-field {
     margin: 8px 0;
 }
+#password-visibility {
+    width: 21px;
+    height: 21px;
+    align-self: flex-end;
+    background-image: url(../img/show-password.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 19px 19px;
+    background-color: #FFF;
+    border-color: #FFF;
+    border-style: none;
+}
+#password-visibility.password-visible {
+    background-image: url(../img/hide-password.png);
+}
 .keep-me-forget-pass {
     align-items: center;
 }
@@ -148,6 +163,9 @@ form label {
     }
     .password-field {
         margin: 15px 0;
+    }
+    #password-visibility {
+        margin-bottom: 5px;
     }
     #login-button {
         width: 164px;
